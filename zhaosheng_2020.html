@@ -30,6 +30,25 @@
             font-size: large;
         }
 
+        a.top:link,a.top:visited {
+            background-color:gray;
+            width:fit-content;
+            color: white;
+            text-decoration: none;
+        }
+
+        a.top:hover {
+            background-color:slategrey;
+            color: white;
+            text-decoration: none;
+        }
+
+        a.top:active{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
         h1 a.big1 {
             color: white;
             background-color: #AF2125;
@@ -37,6 +56,10 @@
             width: fit-content;
             text-decoration: none;
             font-size: x-large;
+            padding:10px;
+            border-left-color: #004182;
+            border-left-style: solid;
+            border-left-width: 30px;
         }
 
         h2 a.big2 {
@@ -45,6 +68,11 @@
             color: white;
             width: fit-content;
             font-size: x-large;
+            border-left-color: #AF2125;
+            border-left-style: solid;
+            border-left-width: 20px;
+            padding: 5px;
+
         }
 
         h3 {
@@ -52,7 +80,7 @@
             align-self: start;
             color: white;
             width: fit-content;
-            font-size: large;
+            font-size: x-large;
         }
     </style>
 </head>
@@ -62,13 +90,13 @@
         style="float:right;border-width: 2px;border-color: #AF2125;border-style: groove;background-color: white;width: 300px">
         <h1>快速链接</h1>
         <br>
-        <a href="#video" style="font-size: x-large;" class="lnk">宣讲视频</a>
+        <a href="#video" style="color:blue;font-size: x-large;" class="lnk">宣讲视频</a>
         <br>
-        <a href="#info" style="font-size: x-large;" class="lnk">本科招生相关信息</a>
+        <a href="#info" style="color:blue;font-size: x-large;" class="lnk">本科招生相关信息</a>
         <br>
-        <a href="#school" style="font-size: x-large;" class="lnk">各学院简介</a>
+        <a href="#school" style="color:blue;font-size: x-large;" class="lnk">各学院简介</a>
         <br>
-        <a href="#book" style="font-size: x-large;" class="lnk">学校招生简章</a>
+        <a href="#book" style="color:blue;font-size: x-large;" class="lnk">学校招生简章</a>
         <br>
         <a href="#QQ" style="color:red;font-size: x-large;" class="lnk">各省招生QQ群</a>
         <br>
@@ -78,8 +106,8 @@
             <img src="xidian_wechat.bmp">
         </div>
     </div>
-    <h1><a class="big1" ;id="top" style="font-size: xx-large">以下是西安电子科技大学2019年报考指南及西电各省招生QQ群。<p
-                style="color:red;background-color: white;"><b>仅供参考。</b></p></a></h1>
+    <h1><a class="big1" ;id="top" style="font-size: xx-large">西电招生相关信息</a></h1>
+    <p style="color:red;background-color:yellow;width: fit-content;font-size: xx-large;"><b>仅供参考</b></p>
     <hr>
     今年新增了四个专业：(点击可下载对应专业申请表了解专业情况)
     <br><a
@@ -95,7 +123,8 @@
         href="https://stuxidianeducn-my.sharepoint.com/:b:/g/personal/zxzhou_stu_xidian_edu_cn/EXuMy3ggXY9PopAWG_pQ8twBtGt0smw_9h8iFWYEhUXFHQ?e=PZl1Ej"
         class="lnk">纳米材料与技术(先进材料与纳米科技学院)</a>
     <br>
-    <p>下面还有<a href="#map" style="color:red">学校地图</a>。有问题可以加<a href="#QQ" style="color: red;">各省招生QQ群</a>（在网页下方，需实名）</p>
+    <p>下面还有<a href="#map" style="color:red" class="lnk">学校地图</a>。有问题可以加<a href="#QQ" style="color: red;" class="lnk">各省招生QQ群</a>（在网页下方，需实名）</p>
+    <p>如果你对这个网站有什么更好的建议或者有补充内容，可以<a href="#bottom" style="color:red" class="lnk">联系我</a>。</p>
     <hr>
     <div>
         <h2><a id="video" class="big2">宣讲视频（腾讯课堂）</a></h2>
@@ -176,7 +205,7 @@
         </ul>
     </div>
     <div id="menu" style="float: right;width: fit-content">
-        <a href="#top">返回顶部</a>
+        <a href="#top" class="top">返回顶部</a>
     </div>
     <hr>
     <div>
@@ -215,7 +244,7 @@
             src="https://zsb.xidian.edu.cn/uploads/allimg/190714/3-1ZG4100339221.jpg" style=" width: 70%;" />
     </div>
     <div id="menu" style="float: right;width: fit-content">
-        <a href="#top">返回顶部</a>
+        <a href="#top" class="top">返回顶部</a>
     </div>
     <hr>
     <div>
@@ -223,7 +252,7 @@
         <img src="zhaosheng_2020_QQ.jpg">
     </div>
     <div id="menu" style="float: right;width: fit-content">
-        <a href="#top">返回顶部</a>
+        <a href="#top" class="top">返回顶部</a>
     </div>
     <hr>
     <div>
@@ -248,7 +277,7 @@
     </div>
 
     <div id="menu" style="float: right;width: fit-content">
-        <a href="#top">返回顶部</a>
+        <a href="#top" class="top">返回顶部</a>
     </div>
     <hr>
     <div id='footer'>
@@ -316,7 +345,7 @@ window.document.write(tips[index]);
 </SCRIPT>
         <noscript>抱歉，你的浏览器不支持 JavaScript，因此不能显示我设置的随机文字，请见谅。</noscript>
         <br>
-        <p>这是我个人的QQ:1301621033</p>
+        <p><a id="bottom" href="http://wpa.qq.com/msgrd?v=3&uin=1301621033&site=qq&menu=yes">这是我个人的QQ:1301621033</a></p>
         <p>https://samzhou-2019.github.io/ @旭旭</p>
     </div>
 </body>
