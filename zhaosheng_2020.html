@@ -31,20 +31,21 @@
             font-size: large;
         }
 
-        a.top:link,a.top:visited {
-            background-color:gray;
-            width:fit-content;
+        a.top:link,
+        a.top:visited {
+            background-color: gray;
+            width: fit-content;
             color: white;
             text-decoration: none;
         }
 
         a.top:hover {
-            background-color:slategrey;
+            background-color: slategrey;
             color: white;
             text-decoration: none;
         }
 
-        a.top:active{
+        a.top:active {
             background-color: black;
             color: white;
             text-decoration: none;
@@ -57,7 +58,7 @@
             width: fit-content;
             text-decoration: none;
             font-size: x-large;
-            padding:10px;
+            padding: 10px;
             border-left-color: #004182;
             border-left-style: solid;
             border-left-width: 30px;
@@ -82,35 +83,73 @@
             color: white;
             width: 640px;
             font-size: x-large;
-            z-index:1;
+            z-index: 1;
         }
+
+        button.menu_button {
+            background-color: gray;
+            right: 5px;
+            font-size: xx-large;
+            border: none;
+            width: 200px;
+            position: fixed;
+            cursor: pointer;
+            top:5px;
+        }
+        
+        div.menu{
+            position: fixed;
+            display: inline-block;
+            right:5px;
+            top:50px;
+            width: 200px;
+        }
+
+        div.menu_content{
+            display: none;
+            position:relative;
+            background-color: slategrey;
+        }
+
+        div.menu_content a{
+            display: block;
+            position: relative;
+            background-color: dimgray;
+            text-decoration: none;
+        }
+
+        div.menu:hover .menu_button{
+            background-color: lightslategray;
+        }
+
+        div.menu:hover .menu_content{
+            display: block;
+        }
+
     </style>
 </head>
 
 <body>
-    <div id="menu"
-        style="right:5px;border-width: 2px;border-color: #AF2125;border-style: groove;background-color:grey;width: 200px;position:fixed;">
-        <h1><i class="fa fa-thumbs-o-up" style="font-size:36px"></i>快速链接</h1>
+    <div class="menu">
+        <button class="menu_button"><i class="fa fa-thumbs-o-up" style="font-size:36px"></i>快速链接</button>
+        <div class=menu_content>
         <a href="#video" style="color:blue;font-size: x-large;" class="lnk">宣讲视频</a>
-        <br>
         <a href="#info" style="color:blue;font-size: x-large;" class="lnk">本科招生相关信息</a>
-        <br>
         <a href="#school" style="color:blue;font-size: x-large;" class="lnk">各学院简介</a>
-        <br>
         <a href="#book" style="color:blue;font-size: x-large;" class="lnk">学校招生简章</a>
-        <br>
         <a href="#QQ" style="color:red;font-size: x-large;" class="lnk">各省招生QQ群</a>
-        <br>
         <a href="#map" style="color: red;font-size: x-large;" class="lnk">学校地图</a>
-        <div>
-            <h3 style="width:200px">西安电子科技大学<br>官方微信公众号</h3>
-            <img src="xidian_wechat.bmp">
-     </div>
+        </div>
     </div>
-        <div><a href="/index.html" class="top" style="right:25px;bottom:75px;position:fixed"><i class="fa fa-flag" style="font-size:24px"></i>点我返回主页</a></div>
-    <div><a href="#top" class="top" style="right:25px;bottom:25px;position:fixed"><i class="fa fa-hand-o-up" style="font-size:24px"></i>点我返回顶部</a></div>
+    <div><a href="/index.html" class="top" style="right:25px;bottom:75px;position:fixed"><i class="fa fa-flag"
+                style="font-size:24px"></i>点我返回主页</a></div>
+    <div><a href="#top" class="top" style="right:25px;bottom:25px;position:fixed"><i class="fa fa-hand-o-up"
+                style="font-size:24px"></i>点我返回顶部</a></div>
+    <div><h3 style="width:fit-content;right:25px;bottom:140px;position:fixed;font-size:initial;">西安电子科技大学<br>官方微信公众号<br><img src="xidian_wechat.bmp"></h3>
+        </div>
     <h1><a class="big1" ;id="top" style="font-size: xx-large">西电招生相关信息</a></h1>
     <p style="color:red;background-color:yellow;width: fit-content;font-size: xx-large;"><b>仅供参考</b></p>
+
     <hr>
     今年新增了四个专业：(点击可下载对应专业申请表了解专业情况)
     <br><a
@@ -126,7 +165,8 @@
         href="https://stuxidianeducn-my.sharepoint.com/:b:/g/personal/zxzhou_stu_xidian_edu_cn/EXuMy3ggXY9PopAWG_pQ8twBtGt0smw_9h8iFWYEhUXFHQ?e=PZl1Ej"
         class="lnk">纳米材料与技术(先进材料与纳米科技学院)</a>
     <br>
-    <p>下面还有<a href="#map" style="color:red" class="lnk">学校地图</a>。有问题可以加<a href="#QQ" style="color: red;" class="lnk">各省招生QQ群</a>（在网页下方，需实名）</p>
+    <p>下面还有<a href="#map" style="color:red" class="lnk">学校地图</a>。有问题可以加<a href="#QQ" style="color: red;"
+            class="lnk">各省招生QQ群</a>（在网页下方，需实名）</p>
     <p>如果你对这个网站有什么更好的建议或者有补充内容，可以<a href="#bottom" style="color:red" class="lnk">联系我</a>。</p>
     <hr>
     <div>
@@ -253,21 +293,21 @@
         <h2><a id="map" class="big2">西安电子科技大学校园地图</a></h2>
         <img src="xidianmap_0.jpg">
         <h3>一些标志性建筑，跳楼塔即观光塔，是整个西电最高的地方。<br>大金碗即体育场。</h3>
-            <img src="xidianmap_1.jpg">
-            <h3>这里是丁香宿舍区，19级的学生在这里居住。<br>（画图的时间是去年暑假，目前未知20级居住地点，可能是在竹园，即地图右上角的宿舍区）</h3>
-                <img src="xidianmap_2.jpg">
-                <h3>教学楼与实验楼，分ABCDEFG楼，地形复杂，容易迷路，开学前务必提前找好教室。</h3>
-                    <img src="xidianmap_3.jpg">
-                    <h3>综合楼，包含超市、饭店、课外辅导机构等，分东西两栋。</h3>
-                        <img src="xidianmap_4.jpg">
-                        <h3>校医院，比较偏僻。看病、体检、接种疫苗、报销医保等。</h3>
-                            <img src="xidianmap_5.jpg">
-                            <h3>操场分南北两个，有足球场、篮球场、乒乓球桌、网球场、游泳池等。<br>中间是大学生活动中心，是社团活动、艺术表演、创新创业等的大本营。</h3>
-                                <img src="xidianmap_6.jpg">
-                                <h3>工程训练中心，金工、电装实习等的场所。<br>信远楼，四个学院的办公地点+研究生教学区。</h3>
-                                    <img src="xidianmap_7.jpg">
-                                    <h3>目前17、18级居住在海棠宿舍区。</h3>
-                                        <img src="xidianmap_8.jpg">
+        <img src="xidianmap_1.jpg">
+        <h3>这里是丁香宿舍区，19级的学生在这里居住。<br>（画图的时间是去年暑假，目前未知20级居住地点，可能是在竹园，即地图右上角的宿舍区）</h3>
+        <img src="xidianmap_2.jpg">
+        <h3>教学楼与实验楼，分ABCDEFG楼，地形复杂，容易迷路，开学前务必提前找好教室。</h3>
+        <img src="xidianmap_3.jpg">
+        <h3>综合楼，包含超市、饭店、课外辅导机构等，分东西两栋。</h3>
+        <img src="xidianmap_4.jpg">
+        <h3>校医院，比较偏僻。看病、体检、接种疫苗、报销医保等。</h3>
+        <img src="xidianmap_5.jpg">
+        <h3>操场分南北两个，有足球场、篮球场、乒乓球桌、网球场、游泳池等。<br>中间是大学生活动中心，是社团活动、艺术表演、创新创业等的大本营。</h3>
+        <img src="xidianmap_6.jpg">
+        <h3>工程训练中心，金工、电装实习等的场所。<br>信远楼，四个学院的办公地点+研究生教学区。</h3>
+        <img src="xidianmap_7.jpg">
+        <h3>目前17、18级居住在海棠宿舍区。</h3>
+        <img src="xidianmap_8.jpg">
     </div>
     <hr>
     <div id='bottom'>
