@@ -33,7 +33,7 @@
 
         a.top:link,
         a.top:visited {
-            background-color: gray;
+            background-color:  rgb(136,150,163);
             width: fit-content;
             color: white;
             text-decoration: none;
@@ -51,18 +51,18 @@
             text-decoration: none;
         }
 
-        h1 a.big1 {
+        h1.big1 {
             color: white;
             background-color: #AF2125;
             align-self: start;
             width: fit-content;
             text-decoration: none;
-            font-size: x-large;
+            font-size: xx-large;
             padding: 10px;
             border-left-color: #004182;
             border-left-style: solid;
             border-left-width: 30px;
-            box-shadow:0px 8px 24px 0px rgba(0,0,0,0.3);
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
         }
 
         h2 a.big2 {
@@ -75,7 +75,7 @@
             border-left-style: solid;
             border-left-width: 20px;
             padding: 5px;
-            box-shadow:0px 8px 24px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);
         }
 
         h3 {
@@ -85,53 +85,81 @@
             width: 640px;
             font-size: x-large;
             z-index: 1;
-            box-shadow:0px 8px 24px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        b.title {
+            color: #AF2125;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        p.content {
+            width: fit-content;
+            background-color: antiquewhite;
+            border: 1px solid #AF2125;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         button.menu_button {
-            background-color: gray;
+            background-color:  rgb(136,150,163);
             right: 25px;
             font-size: xx-large;
             border: none;
             width: 200px;
             position: fixed;
             cursor: pointer;
-            top:25px;
-            box-shadow:0px 8px 24px 0px rgba(0,0,0,0.3);
+            top: 25px;
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
         }
-        
-        div.menu{
+
+        div.menu {
             position: fixed;
             display: inline-block;
-            right:25px;
-            top:65px;
+            right: 25px;
+            top: 65px;
             width: 200px;
         }
 
-        div.menu_content{
+        div.menu_content {
             display: none;
-            position:relative;
+            position: relative;
             background-color: slategrey;
-            box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
         }
 
-        div.menu_content a{
+        div.menu_content a {
             display: block;
             position: relative;
-            background-color: dimgray;
+            background-color: dim rgb(136,150,163);
             text-decoration: none;
         }
 
-        div.menu:hover .menu_button{
+        div.menu:hover .menu_button {
             background-color: black;
             color: blanchedalmond;
-            box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
         }
 
-        div.menu:hover .menu_content{
+        div.menu:hover .menu_content {
             display: block;
         }
 
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: #004182;
+            color: white;
+            text-align: center;
+        }
+
+        td {
+            width: fit-content;
+        }
     </style>
 </head>
 
@@ -139,22 +167,31 @@
     <div class="menu">
         <button class="menu_button"><i class="fa fa-thumbs-o-up" style="font-size:36px"></i>快速链接</button>
         <div class=menu_content>
-        <a href="#video" style="color:blue;font-size: x-large;" class="lnk">宣讲视频</a>
-        <a href="#info" style="color:blue;font-size: x-large;" class="lnk">本科招生相关信息</a>
-        <a href="#school" style="color:blue;font-size: x-large;" class="lnk">各学院简介</a>
-        <a href="#book" style="color:blue;font-size: x-large;" class="lnk">学校招生简章</a>
-        <a href="#QQ" style="color:red;font-size: x-large;" class="lnk">各省招生QQ群</a>
-        <a href="#map" style="color: red;font-size: x-large;" class="lnk">学校地图</a>
+            <a href="#zhangcheng" style="color: red;font-size: x-large;" class="lnk"><b style="background-color: #004182;color: white;">新</b> 本科招生章程</a>
+            <a href="#major" style="color: red;font-size: x-large;" class="lnk"><b style="background-color: #AF2125;color: white;">热</b> 本科招生专业</a>
+            <a href="#video" style="color:blue;font-size: x-large;" class="lnk">宣讲视频</a>
+            <a href="#info" style="color:blue;font-size: x-large;" class="lnk">本科招生相关信息</a>
+            <a href="#school" style="color:blue;font-size: x-large;" class="lnk">各学院简介</a>
+            <a href="#book" style="color:blue;font-size: x-large;" class="lnk">学校招生简章</a>
+            <a href="#QQ" style="color:red;font-size: x-large;" class="lnk">各省招生QQ群</a>
+            <a href="#map" style="color: red;font-size: x-large;" class="lnk">学校地图</a>
         </div>
     </div>
-    <div><a href="/index.html" class="top" style="right:25px;bottom:75px;position:fixed"><i class="fa fa-flag"
-                style="font-size:24px;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);"></i>点我返回主页</a></div>
-    <div><a href="#top" class="top" style="right:25px;bottom:25px;position:fixed"><i class="fa fa-hand-o-up"
-                style="font-size:24px;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);"></i>点我返回顶部</a></div>
-    <div><h3 style="width:fit-content;right:25px;bottom:160px;position:fixed;font-size:initial;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);">西安电子科技大学<br>官方微信公众号<br><img src="xidian_wechat.bmp"></h3></div>
-    <div><pre style="color:red;background-color:yellow;width: fit-content;font-size: xx-large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);position: fixed;right: 25px;bottom: 80px;"><b>仅供参考</b></pre></div>
-        </div>
-    <h1><a class="big1" ;id="top" style="font-size: xx-large">西电招生相关信息</a></h1>
+    <div><a href="/index.html" class="top" style="right:25px;bottom:75px;position:fixed;color: black;"><i class="fa fa-flag"
+                style="font-size:24px;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);"></i><b>点我返回主页</b></a></div>
+    <div><a href="#top" class="top" style="right:25px;bottom:25px;position:fixed;color: black;"><i class="fa fa-hand-o-up"
+                style="font-size:24px;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);"></i><b>点我返回顶部</b></a></div>
+    <div>
+        <h3
+            style="width:fit-content;right:25px;bottom:160px;position:fixed;font-size:initial;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);">
+            西安电子科技大学<br>官方微信公众号<br><img src="xidian_wechat.bmp"></h3>
+    </div>
+    <div>
+        <pre
+            style="color:red;background-color:yellow;width: fit-content;font-size: xx-large;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);position: fixed;right: 25px;bottom: 80px;"><b>仅供参考</b></pre>
+    </div>
+    </div>
+    <h1 class="big1"><a id="top">西电招生相关信息</a></h1>
     <hr>
     今年新增了四个专业：(点击可下载对应专业申请表了解专业情况)
     <br><a
@@ -173,6 +210,430 @@
     <p>下面还有<a href="#map" style="color:red" class="lnk">学校地图</a>。有问题可以加<a href="#QQ" style="color: red;"
             class="lnk">各省招生QQ群</a>（在网页下方，需实名）</p>
     <p>如果你对这个网站有什么更好的建议或者有补充内容，可以<a href="#bottom" style="color:red" class="lnk">联系我</a>。</p>
+    <hr>
+    <div>
+        <h2><a id="zhangcheng" class="big2">西安电子科技大学2020年本科招生章程</a></h2>
+        <p> <b style="background-color: #AF2125;color: white;">重要</b>
+            <b style="background-color: #004182;color: white;">最新</b>
+            发布于2020年6月28日。<a
+                href="https://mp.weixin.qq.com/s?__biz=MjM5MTAxMTUyMA==&mid=2654986232&idx=1&sn=8ad2893c008f8381bc19067b9e7deb07"
+                class="lnk">查看官方公众号消息。</a></p>
+        <b class="title">第一章 总则</b>
+        <p class="content"><b style="color: #AF2125;">第一条</b>
+            为保证学校本科生招生工作顺利进行，切实维护学校和考生的合法权益，根据《中华人民共和国教育法》、《中华人民共和国高等教育法》等相关法律和教育部有关规定，以及《西安电子科技大学章程》，特制定本章程。
+            <br><br>
+            <b style="color: #AF2125;">第二条</b> 学校全称为<b style="color: #AF2125;">西安电子科技大学</b>，国标代码10701，是国家公办、全日制普通高等学校，<b
+                style="color: #AF2125;">国家“双一流”建设高校</b>，国家“2011计划”认定高校。学校建有南、北两个校区，北校区地址为陕西省西安市太白南路2号，邮编710071；南校区地址为陕西省西安市西沣路兴隆段266号，邮编710126。
+            <br><br>
+            <b style="color: #AF2125;">第三条</b>
+            颁发证书：在规定的年限内达到所在专业毕业要求者，颁发西安电子科技大学本科毕业证书；符合学校学位授予有关规定者，颁发普通高等教育本科毕业生学士学位证书。
+            <br><br>
+            <b style="color: #AF2125;">第四条</b>
+            西安电子科技大学本科生的招生对象为：参加国家统一组织考试的高考生（含国家专项计划、高校专项计划、定向就业生、艺术类专业、高水平运动队、少数民族预科班、内地新疆高中班、内地西藏高中班、新疆协作计划等）以及保送生。
+            <br><br>
+            <b style="color: #AF2125;">第五条</b> 2020年西安电子科技大学<b
+                style="color: #AF2125;">面向全国实行按专业大类招生</b>，以通识教育和专业基础教育为核心，实施学生大类培养，提升学生社会责任感、创新精神和实践能力。具体招生专业大类名称详见我校公布的《2020年西安电子科技大学本科生招生专业（类）目录》。
+            <br><br>
+            <b style="color: #AF2125;">第六条</b>
+            西安电子科技大学招生工作将全面贯彻教育部有关文件精神，全面贯彻实施高校招生“阳光工程”，本着公平、公正、公开的原则，综合衡量考生的德智体美劳情况，择优录取。</p>
+        <b class="title">第二章 组织机构及职责</b>
+        <p class="content"><b style="color: #AF2125;">第七条</b>
+            学校根据教育部有关规定，组建西安电子科技大学招生委员会，成立西安电子科技大学招生工作领导小组，领导和监督学校的本科招生工作。招生委员会是咨询及监督机构，负责为学校本科招生工作提供决策咨询及有效监督，成员由学校负责人、主管招生工作负责人以及教务、纪检、招生等部门负责人和教师代表、学生代表、校友代表组成。招生工作领导小组是最高决策机构，统一领导学校本科招生工作，由校长担任组长，分管副校长、纪委书记任副组长，教务处、纪检监察办公室、本科生招生办公室等部门负责人任组员。
+            <br><br>
+            <b style="color: #AF2125;">第八条</b> 学校招生办公室作为学校的常设机构，负责组织实施学校本科招生工作及其他日常工作。其职责是：
+            <br><br>
+            1.严格执行教育部有关招生工作的政策及各省（直辖市、自治区）招生委员会的补充规定和实施细则；
+            <br><br>
+            2.拟定学校本科招生章程；
+            <br><br>
+            3.按照教育部下达的年度招生计划及有关规定编制分地区、分专业招生来源计划；
+            <br><br>
+            4.组织开展招生宣传咨询；
+            <br><br>
+            5.组织实施本科生录取工作，负责协调和处理录取工作中的有关问题；
+            <br><br>
+            6.履行学校招生信息公开相应职责；
+            <br><br>
+            7.配合学校有关部门对录取的新生进行入学资格复查；
+            <br><br>
+            8.完成教育主管部门和学校交办的其它工作。
+            <br><br>
+            <b style="color: #AF2125;">第九条</b> 西安电子科技大学本科招生工作实行上级主管部门、内部和第三方多重监督机制，在教育部、学校纪检监察部门的监督下开展工作。</p>
+        <b class="title">第三章 招生计划</b>
+        <p class="content"><b style="color: #AF2125;">第十条</b>
+            西安电子科技大学面向全国招生，根据国家政策要求，考虑各省高考报名人数情况，兼顾区域协调发展等因素，根据本校办学条件等实际情况，结合近年来本校来源计划编制情况及各省生源质量，综合分析、确定本校来源计划编制原则和办法，科学合理确定分省分专业计划。年度招生计划及分省分专业招生计划以教育部及各省级招生机构公布为准。
+            <br><br>
+            <b style="color: #AF2125;">第十一条</b> 学校将招生计划总数的1%作为预留计划，主要用于调节各地统考上线生源的不平衡。预留计划使用时，坚持质量优先、公开透明的原则。
+            <br><br>
+            <b style="color: #AF2125;">第十二条</b>
+            学校根据各省招生计划和考生报考情况确定提档比例。对于实行非平行志愿的投档批次，提档比例一般不超过招生计划的120%；对于实行平行志愿的投档批次，提档比例一般不超过招生计划的105%。</p>
+        <b class="title">第四章 招生类型与录取规则</b>
+        <p class="content"><b style="color: #AF2125;">第十三条</b>
+            学校采用投档成绩调取考生档案，在已调档的考生中，采用“分数优先、遵循志愿”的原则确定考生专业，各专业志愿之间不设分数级差。对于投档成绩相同的考生，依次按数学、外语、语文成绩排序录取及确定专业，同分排序后仍完全相同的，我校将使用预留计划录取。如考生所填报的所有专业志愿均不能被录取，且服从调剂，则根据考生成绩安排其他未满额专业。所有专业志愿都无法满足又不服从调剂的考生，作退档处理。
+            <br><br>
+            <b style="color: #AF2125;">第十四条</b>
+            对于江苏省考生报考我校普通类专业，要求学业水平测试成绩为选测AB以上，必测科目（含技术科目）成绩均须达到合格。采用投档分调取考生档案，考生进档后采用“先分数（即投档分）后等级”的原则排序确定考生专业。若投档分相同，则依次按数学、外语、语文科目成绩从高到低的顺序择优录取，若仍相同，则按选测科目等级从高到低的顺序择优录取，等级顺序为A+A+、A+A、AA、A+B+、A+B、AB+、AB。
+            <br><br>
+            <b style="color: #AF2125;">第十五条</b> 上海、浙江、北京、天津、山东及海南等6个高考综合改革省份（直辖市）的投档考生须满足我校选考科目要求。
+            <br><br>
+            <b style="color: #AF2125;">第十六条</b> 我校在内蒙古自治区以投档分为排序成绩按招生计划1:1范围内专业志愿清的规则录取。
+            <br><br>
+            <b style="color: #AF2125;">第十七条</b>
+            按照顺序志愿投档的批次，在第一志愿考生生源不足的情况下，我校可接收非第一志愿考生，按照投档成绩择优录取。对于非第一志愿报考我校的考生，在第一志愿报考我校的考生未录取满额的专业中采用前述原则确定专业。若符合条件的非第一志愿考生生源仍不足，将征集志愿。按照平行志愿投档的批次，未完成的计划也将征集志愿。征集志愿仍不足则将剩余计划调剂到其他生源质量好的省份完成招生计划。
+            <br><br>
+            <b style="color: #AF2125;">第十八条</b> 学校各专业招生无男女比例限制。
+            <br><br>
+            <b style="color: #AF2125;">第十九条</b> 报考英语、日语、翻译专业的考生，要求其高考外语科目为英语。
+            <br><br>
+            <b style="color: #AF2125;">我校公共外语课及相关专业课不具备非英语语种开设条件，请非英语语种的考生谨慎填报。</b>
+            <br><br>
+            <b style="color: #AF2125;">第二十条</b> 学校在提档及专业录取时认可教育部和各省（直辖市、自治区）招生主管部门审定的全国性政策性加分，且加分政策不适用于不做分省计划的招生类型。
+            <br><br>
+            <b style="color: #AF2125;">第二十一条</b> 所有录取考生的身体健康状况必须符合教育部、卫生部、中国残疾人联合会印发的《普通高等学校招生体检工作指导意见》及有关补充规定的要求。
+            <br><br>
+            <b style="color: #AF2125;">第二十二条</b> 我校艺术类专业、高校专项计划（农村学生单独招生）、高水平运动队、保送生招生相关政策以教育部等国家相关部门的规定及我校制订的相关招生简章为准。
+            <br><br>
+            <b style="color: #AF2125;">第二十三条</b>
+            电子信息工程（中外合作办学项目）为中外合作办学专业，由我校与法国南特大学综合理工学院合作举办，报考学生的高考成绩达到所在省（直辖市、自治区）同批次录取控制线后，择优录取。在校学习期间，1/3以上的专业核心课程由法国教师承担，采用法文教材并实施法语授课。本专业学制四年，完成学业要求且达到授位条件的学生授予西安电子科技大学电子信息工程专业本科毕业证书及工学学士学位证书。项目学生在校期间将接受三次赴法资格评审，评审通过者可在第四学年前往法国综合理工集团15所学院进入为期2年或3年的法国工程师阶段学习，即3+2或3+3培养模式（第四年学分等同认定），达到法国毕业条件可获得法国工程师职衔委员会（CTI）颁发的工程师文凭（我国教育部认可的硕士文凭）。
+            <br><br>
+            <b style="color: #AF2125;">第二十四条</b>
+            通信工程（中外合作办学项目）为中外合作办学专业，由我校与英国赫瑞瓦特大学合作举办。报考学生的高考成绩达到所在省（直辖市、自治区）同批次录取控制线，择优录取。录取考生入学注册后同时具有西安电子科技大学和英国赫瑞瓦特大学学籍。本专业50%的专业核心课程由英方教师讲授。本专业学制四年，采用“3+1”的培养模式，完成全部四年学业（前三年在国内、第四年在英国）且达到授位条件的学生将被授予西安电子科技大学通信工程专业本科毕业证书和工学学士学位证书、英国赫瑞瓦特大学通信工程专业工学学士学位证书。本专业全英文授课，建议非英语语种考生谨慎报考。
+            <br><br>
+            <b style="color: #AF2125;">第二十五条</b> 报考我校的考生可以通过各省级招生主管部门公布的查询方式查询本人的录取结果，也可以登陆<a
+                href="http://zsb.xidian.edu.cn" class="lnk">我校招生信息网</a>查询。</p>
+        <b class="title">第五章 附则</b>
+        <br><br>
+        <p class="content"><b style="color: #AF2125;">第二十六条</b>
+            新生入学后，学校将依据教育部有关文件规定进行新生资格审查和身体复查，凡复查不合格的新生，将按照有关规定进行处理，直至取消入学资格。
+            <br><br>
+            <b style="color: #AF2125;">第二十七条</b> 我校按照国家规定和陕西省物价局核准标准确定学费和住宿费标准。如果相关主管部门调整本年度本科生学费收费标准，我校将按照新规定收取学费。
+            <br><br>
+            <b style="color: #AF2125;">第二十八条</b>
+            学校积极拓展资助渠道和形式，将解困与育人相结合，建立健全涵盖“奖、贷、助、补、勤、减、偿”等多项措施的精准化学生资助工作体系，秉承“经济资助，能力帮助”的双助理念，面向学生成长需求，从多维度对学生开展未来适应能力培训，全面助力家庭经济困难学生素质和能力的提升。
+            <br><br>
+            <b style="color: #AF2125;">第二十九条</b>
+            我校招生咨询联系电话：029-88202335；传真：029-88204236；电子邮箱：zsb@mail.xidian.edu.cn；招生信息网址：http://zsb.xidian.edu.cn。学校纪检监察部门监督电话：029-81891725。
+            <br><br>
+            <b style="color: #AF2125;">第三十条</b> 本章程由西安电子科技大学招生办公室负责解释，对于各种媒体节选公布的章程内容，如理解有误，以我校公布的完整的招生章程为准。
+            <br><br>
+            <b style="color: #AF2125;">第三十一条</b> 本章程自公布之日起施行，原招生章程同时废止，如遇国家法律、法规、规章和上级有关政策变化，以变化后的规定为准。</p>
+        <p style="text-align: right;">西安电子科技大学</p>
+        <p style="text-align: right;">2020年6月</p>
+        <h1 class="big1">挑战科学高峰，成就领军人才<br>
+            欢迎报考西安电子科技大学</h1>
+    </div>
+    <hr>
+    <div>
+        <h2><a id="major" class="big2">2020年西安电子科技大学本科招生专业（类）目录</a></h2>
+        <p> <b style="background-color: #AF2125;color: white;">重要</b>
+            <b style="background-color: #004182;color: white;">最新</b>
+            发布于2020年6月28日。<a href="https://zsb.xidian.edu.cn/html/zsxx/zszhc/2020/0628/1315.html"
+                class="lnk">查看本科招生网消息。</a></p>
+        <table>
+            <tr>
+                <th>序号</th>
+                <th>专业(类)名称</th>
+                <th>学院</th>
+                <th>类中所含专业</th>
+            </tr>
+            <tr>
+                <td rowspan="16">1</td>
+                <td rowspan="16">电子信息类</td>
+                <td rowspan="3">通信工程学院</td>
+                <td><b style="background-color: #AF2125;color: white;">热</b>通信工程</td>
+            </tr>
+            <tr>
+                <td>信息工程</td>
+            </tr>
+            <tr>
+                <td>空间信息与数字技术</td>
+            </tr>
+            <tr>
+                <td rowspan="4">电子工程学院</td>
+                <td><b style="background-color: #AF2125;color: white;">热</b>电子信息工程</td>
+            </tr>
+            <tr>
+                <td>信息对抗技术</td>
+            </tr>
+            <tr>
+                <td>遥感科学与技术</td>
+            </tr>
+            <tr>
+                <td><b style="background-color: #AF2125;color: white;">热</b>电磁场与无线技术</td>
+            </tr>
+            <tr>
+                <td rowspan="2">微电子学院</td>
+                <td><b style="background-color: #AF2125;color: white;">热</b>微电子科学与工程</td>
+            </tr>
+            <tr>
+                <td><b style="background-color: #AF2125;color: white;">热</b>集成电路设计与集成系统</td>
+            </tr>
+            <tr>
+                <td rowspan="4">物理与光电工程学院</td>
+                <td><b style="background-color: #AF2125;color: white;">热</b>电子科学与技术</td>
+            </tr>
+            <tr>
+                <td>光电信息科学与工程</td>
+            </tr>
+            <tr>
+                <td><b style="background-color: #AF2125;color: white;">热</b>电子信息科学与技术</td>
+            </tr>
+            <tr>
+                <td>电波传播与天线</td>
+            </tr>
+            <tr>
+                <td rowspan="3">空间科学与技术学院</td>
+                <td>空间科学与技术</td>
+            </tr>
+            <tr>
+                <td>探测制导与控制技术</td>
+            </tr>
+            <tr>
+                <td><b style="background-color: #004182;color: white;">新</b>飞行器设计与工程</td>
+            </tr>
+            <tr>
+                <td rowspan="10">2</td>
+                <td rowspan="10">计算机类</td>
+                <td rowspan="5">计算机科学与技术学院</td>
+                <td><b style="background-color: #AF2125;color: white;">热</b>计算机科学与技术</td>
+            </tr>
+            <tr>
+                <td>物联网工程</td>
+            </tr>
+            <tr>
+                <td><b style="background-color: #AF2125;color: white;">热</b>软件工程</td>
+            </tr>
+            <tr>
+                <td>数字媒体技术</td>
+            </tr>
+            <tr>
+                <td>数据科学与大数据技术</td>
+            </tr>
+            <tr>
+                <td rowspan="2">人工智能学院</td>
+                <td>智能科学与技术</td>
+            </tr>
+            <tr>
+                <td>人工智能</td>
+            </tr>
+            <tr>
+                <td rowspan="3">网络与信息安全学院</td>
+                <td>信息安全</td>
+            </tr>
+            <tr>
+                <td>网络工程</td>
+            </tr>
+            <tr>
+                <td>网络空间安全</td>
+            </tr>
+
+            <tr>
+                <td rowspan="7">
+
+                    3</td>
+                <td rowspan="7">
+                    自动化类</td>
+                <td rowspan="7">
+                    机电工程学院</td>
+                <td>
+                    <b style="background-color: #AF2125;color: white;">热</b>机械设计制造及其自动化</td>
+            </tr>
+            <tr>
+                <td>
+                    工业设计</td>
+            </tr>
+            <tr>
+                <td>
+                    <b style="background-color: #AF2125;color: white;">热</b>电子封装技术</td>
+            </tr>
+            <tr>
+                <td>
+                    电气工程及其自动化</td>
+            </tr>
+            <tr>
+                <td>
+                    自动化</td>
+            </tr>
+            <tr>
+                <td>
+                    测控技术与仪器</td>
+            </tr>
+            <tr>
+                <td>
+                    <b style="background-color: #004182;color: white;">新</b>机器人工程</td>
+            </tr>
+            <tr>
+                <td rowspan="11">
+                    4</td>
+                <td rowspan="11">
+                    管理科学与工程类</td>
+                <td rowspan="11">
+                    经济与管理学院</td>
+                <td>
+                    信息管理与信息系统</td>
+            </tr>
+            <tr>
+                <td>
+                    工程管理</td>
+            </tr>
+            <tr>
+                <td>
+                    工业工程</td>
+            </tr>
+            <tr>
+                <td>
+                    电子商务</td>
+            </tr>
+            <tr>
+                <td>
+                    金融学</td>
+            </tr>
+            <tr>
+                <td>
+                    工商管理</td>
+            </tr>
+            <tr>
+                <td>
+                    市场营销</td>
+            </tr>
+            <tr>
+                <td>
+                    人力资源管理</td>
+            </tr>
+            <tr>
+                <td>
+                    劳动与社会保障</td>
+            </tr>
+            <tr>
+                <td>
+                    行政管理</td>
+            </tr>
+            <tr>
+                <td>
+                    <b style="background-color: #004182;color: white;">新</b>大数据管理与应用</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    5</td>
+                <td rowspan="2">
+                    中国语言文学类</td>
+                <td rowspan="2">
+                    人文学院</td>
+                <td>
+                    汉语言文学</td>
+            </tr>
+            <tr>
+                <td>
+                    哲学</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    6</td>
+                <td rowspan="3">
+                    外国语言文学类</td>
+                <td rowspan="3">
+                    外国语学院</td>
+                <td>
+                    英语</td>
+            </tr>
+            <tr>
+                <td>
+                    日语</td>
+            </tr>
+            <tr>
+                <td>
+                    翻译</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    7</td>
+                <td rowspan="3">
+                    数学类</td>
+                <td rowspan="3">
+                    数学与统计学院</td>
+                <td>
+                    数学与应用数学</td>
+            </tr>
+            <tr>
+                <td>
+                    信息与计算科学</td>
+            </tr>
+            <tr>
+                <td>
+                    统计学</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    8</td>
+                <td rowspan="3">
+                    生物医学工程类</td>
+                <td rowspan="3">
+                    生命科学技术学院</td>
+                <td>
+                    生物医学工程</td>
+            </tr>
+            <tr>
+                <td>
+                    生物技术</td>
+            </tr>
+            <tr>
+                <td>
+                    智能医学工程</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    9</td>
+                <td rowspan="3">
+                    材料类</td>
+                <td rowspan="3">
+                    先进材料与纳米科技学院</td>
+                <td>
+                    材料科学与工程</td>
+            </tr>
+            <tr>
+                <td>
+                    应用化学</td>
+            </tr>
+            <tr>
+                <td>
+                    <b style="background-color: #004182;color: white;">新</b>纳米材料与技术</td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    10</td>
+                <td>
+                    录音艺术
+                    （艺术类）</td>
+                <td>
+                    人文学院</td>
+                <td>
+                    录音艺术
+                    （艺术类）</td>
+            </tr>
+            <tr>
+                <td>
+                    电子信息工程
+                    （中外合作办学）</td>
+                <td>
+                    电子工程学院</td>
+                <td>
+                    电子信息工程
+                    （中外合作办学）</td>
+            </tr>
+            <tr>
+                <td>
+                    通信工程
+                    （中外合作办学）</td>
+                <td>
+                    通信工程学院</td>
+                <td>
+                    通信工程
+                    （中外合作办学）</td>
+            </tr>
+        </table>
+        <p>备注：1.<b style="background-color: #004182;color: white;">新</b> 表示2020年新增专业；
+        <br>2.<b style="background-color: #AF2125;color: white;">热</b> 表示国家级特色专业。</p>
+    </div>
     <hr>
     <div>
         <h2><a id="video" class="big2">宣讲视频（腾讯课堂）</a></h2>
@@ -291,7 +752,9 @@
     <hr>
     <div>
         <h2><a id="QQ" class="big2">西电各省招生QQ群</a></h2>
-        <p style="background-color:yellow;width:fit-content;">警告：该图片不稳定。<br>如果图片无法显示，请<a href="https://stuxidianeducn-my.sharepoint.com/:i:/g/personal/zxzhou_stu_xidian_edu_cn/EU-F99lL_tpGqL3mhFs8qnABja2vV0kpHaP-t1VzvXDiBQ?e=9Svfse" class="lnk">点击这里</a>下载原图片。</p>
+        <p style="background-color:yellow;width:fit-content;">警告：该图片不稳定。<br>如果图片无法显示，请<a
+                href="https://stuxidianeducn-my.sharepoint.com/:i:/g/personal/zxzhou_stu_xidian_edu_cn/EU-F99lL_tpGqL3mhFs8qnABja2vV0kpHaP-t1VzvXDiBQ?e=9Svfse"
+                class="lnk">点击这里</a>下载原图片。</p>
         <img src="zhaosheng_2020_QQ.jpg">
     </div>
     <hr>
