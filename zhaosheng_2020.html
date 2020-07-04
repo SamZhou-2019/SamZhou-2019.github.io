@@ -3,6 +3,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>西电招生相关信息</title>
+    <!--[if lt IE 9]>
+    <script style="font-size:xx-large">window.alert("请注意，此网页不兼容IE。\n请使用其他浏览器（如360浏览器，Firefox，Chrome等。\n如有疑问请联系网页制作者（QQ：1301621033）。");</script>
+    <![endif]-->
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <style>
         a.lnk:link {
@@ -37,6 +40,7 @@
             width: fit-content;
             color: white;
             text-decoration: none;
+            z-index: 0;
         }
 
         a.top:hover {
@@ -82,7 +86,6 @@
             background-color: #004182;
             align-self: start;
             color: white;
-            width: 640px;
             font-size: x-large;
             z-index: 1;
             box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);
@@ -151,6 +154,39 @@
             display: block;
         }
 
+        div.img {
+            margin:3px;
+            border:2px solid #AF2125;
+            float:left;
+            width: 320px;
+            box-shadow: rgba(0, 0, 0, 0.3);
+            height: 520px;
+            z-index: -1;
+        }
+
+        .map {
+            position: relative;
+            top: 0px;
+            box-shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        .img:hover,
+        .img:active {
+            border: 2px solid #004182;
+            box-shadow: rgba(0, 0, 0, 0.5);
+        }
+
+        .desc {
+            background-color: grey;
+            color: white;
+            box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);
+            font-size: inherit;
+            text-align: center;
+            float: inline-start;
+            margin: 0px;
+            text-decoration: none;
+        }
+
         table,
         th,
         td {
@@ -196,7 +232,7 @@
                 style="font-size:24px;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);"></i><b>点我返回顶部</b></a></div>
     <div>
         <h3
-            style="width:fit-content;right:25px;bottom:160px;position:fixed;font-size:larger;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);">
+            style="width:fit-content;right:25px;bottom:160px;position:fixed;font-size:large;box-shadow:0px 8px 24px 0px rgba(0,0,0,0.5);">
             西安电子科技大学<br>官方微信公众号<br><img src="xidian_wechat.bmp" style="width: 100%"></h3>
     </div>
     <div>
@@ -770,27 +806,64 @@
         <img src="zhaosheng_2020_QQ.jpg" style="width: 100%;">
     </div>
     <hr>
-    <div>
+    <div >
         <h2><a id="map" class="big2">西安电子科技大学校园地图</a></h2>
-        <img src="xidianmap_0.jpg" style="width: 100%;">
-        <h3>一些标志性建筑，跳楼塔即观光塔，是整个西电最高的地方。<br>大金碗即体育场。</h3>
-        <img src="xidianmap_1.jpg" style="width: 100%;">
-        <h3>这里是丁香宿舍区，19级的学生在这里居住。<br>（画图的时间是去年暑假，目前未知20级居住地点，可能是在竹园，即地图右上角的宿舍区）</h3>
-        <img src="xidianmap_2.jpg" style="width: 100%;">
-        <h3>教学楼与实验楼，分ABCDEFG楼，地形复杂，容易迷路，开学前务必提前找好教室。</h3>
-        <img src="xidianmap_3.jpg" style="width: 100%;">
-        <h3>综合楼，包含超市、饭店、课外辅导机构等，分东西两栋。</h3>
-        <img src="xidianmap_4.jpg" style="width: 100%;">
-        <h3>校医院，比较偏僻。看病、体检、接种疫苗、报销医保等。</h3>
-        <img src="xidianmap_5.jpg" style="width: 100%;">
-        <h3>操场分南北两个，有足球场、篮球场、乒乓球桌、网球场、游泳池等。<br>中间是大学生活动中心，是社团活动、艺术表演、创新创业等的大本营。</h3>
-        <img src="xidianmap_6.jpg" style="width: 100%;">
-        <h3>工程训练中心，金工、电装实习等的场所。<br>信远楼，四个学院的办公地点+研究生教学区。</h3>
-        <img src="xidianmap_7.jpg" style="width: 100%;">
-        <h3>目前17、18级居住在海棠宿舍区。</h3>
-        <img src="xidianmap_8.jpg" style="width: 100%;">
+        <div class="img">
+              <a target="_blank" href="xidianmap_0.jpg" style="position: relative;top:0px;">
+                <img class="map" src="xidianmap_0.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+              </a>
+          </div>
+          <div class="img">
+               <a target="_blank" href="xidianmap_1.jpg" >
+                <img class="map" src="xidianmap_1.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">一些标志性建筑，跳楼塔即观光塔，是整个西电最高的地方。大金碗即体育场。</p>
+            </a>
+          </div>
+          <div class="img">
+             <a target="_blank" href="xidianmap_2.jpg">
+                <img class="map" src="xidianmap_2.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">这里是丁香宿舍区，19级的学生在这里居住。（标记的时间是去年暑假，目前未知20级居住地点，可能是在竹园，即地图右上角的宿舍区）</p>
+            </a>
+          </div>
+          <div class="img">
+           <a target="_blank" href="xidianmap_3.jpg">
+                <img class="map" src="xidianmap_3.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">教学楼与实验楼，分ABCDEFG楼，地形复杂，容易迷路，开学前务必提前找好教室。</p>
+            </a>
+          </div>
+          <div class="img">
+             <a target="_blank" href="xidianmap_4.jpg">
+                <img class="map" src="xidianmap_4.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">综合楼，包含超市、饭店、课外辅导机构等，分东西两栋。</p>
+            </a>
+          </div>
+          <div class="img">
+            <a target="_blank" href="xidianmap_5.jpg">
+                <img class="map" src="xidianmap_5.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">校医院，比较偏僻。看病、体检、接种疫苗、报销医保等。</p>
+            </a>
+          </div>
+          <div class="img">
+            <a target="_blank" href="xidianmap_6.jpg">
+                <img class="map" src="xidianmap_6.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">操场分南北两个，有足球场、篮球场、乒乓球桌、网球场、游泳池等。中间是大学生活动中心，是社团活动、艺术表演、创新创业等的大本营。</p>
+            </a>
+          </div>
+          <div class="img">
+            <a target="_blank" href="xidianmap_7.jpg">
+                <img class="map" src="xidianmap_7.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">工程训练中心，金工、电装实习等的场所。信远楼，四个学院的办公地点+研究生教学区。</p>
+            </a>
+          </div>
+          <div class="img">
+           <a target="_blank" href="xidianmap_8.jpg">
+                <img class="map" src="xidianmap_8.jpg" alt="西安电子科技大学校园地图" width="320" height="430">
+                <p class="desc">目前17、18级居住在海棠宿舍区。</p>
+            </a>
+          </div>
     </div>
-    <hr>
+    <br>
+    <hr style="clear: both;">
     <div id='bottom'>
         <p>这个网站是由个人维护的，不代表西电招生办或西电任何部门或组织机构。&gt; 。&lt;</p>
     <div  style="font-size: x-large;border: 2px solid #000;width: fit-content;background-color:wheat;">
