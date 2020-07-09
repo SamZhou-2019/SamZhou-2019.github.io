@@ -120,6 +120,7 @@
             cursor: pointer;
             top: 25px;
             box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
+            z-index: 1;
         }
 
         div.menu {
@@ -128,6 +129,7 @@
             right: 25px;
             top: 65px;
             width: 200px;
+            z-index: 1;
         }
 
         div.menu_content {
@@ -135,6 +137,7 @@
             position: relative;
             background-color: slategrey;
             box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
 
         div.menu_content a {
@@ -142,16 +145,19 @@
             position: relative;
             background-color: dim rgb(136, 150, 163);
             text-decoration: none;
+            z-index: 1;
         }
 
         div.menu:hover .menu_button {
             background-color: black;
             color: blanchedalmond;
             box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1;
         }
 
         div.menu:hover .menu_content {
             display: block;
+            z-index: 1;
         }
 
         div.img {
@@ -986,15 +992,8 @@ console.log("这是一段测试文字");
                 href="mailto:zhouzexu2010@sina.cn?cc=zxzhou@stu.xidian.edu.cn&subject=About%20samzhou-2019.github.io"
                 target="_top" class="lnk">点击这里向我发送邮件。</a></p>
     </div>
-    <div style="width:fit-content;height: 90px;">
-        <a href='404.html'><img src='demo1.png'><img src='demo2.png'><img src='demo3.png'></a>
-        <p style="position: relative;bottom: 80px;left: 150px;font-size: smaller;">这是一些测试图片。至于干什么，目前还不知道，先放这儿。
-            <br>
-            （主要是为了凑够一千行代码）
-            <br>
-            这里是本页面的底部。</p> 
-        </div>
         <script>
             document.write(Date());
+            document.write('\n这里是本页面的底部。');
         </script>
 </body>
