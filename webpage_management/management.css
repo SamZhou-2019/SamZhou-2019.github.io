@@ -40,7 +40,7 @@ b {
     text-align: center;
 }
 
-p {
+p.content {
     width: fit-content;
     font-size: x-large;
     background-color: antiquewhite;
