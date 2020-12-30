@@ -19,7 +19,8 @@ public final class object(){};// 国家统一分配对象，还包邮
 
 # Java 学习笔记
 
-整理于~~2020-10-12~~ 2020-12-17
+整理于~~2020-10-12~~ 2020-12-17 
+更新于2020/12/30  标记为🎈
 ~~面向对象的程序设计——看着对象写代码~~
 
 ![Java 徽标](https://www.java.com/content/published/api/v1.1/assets/CONTA448BB91E07B484D864D20FF5E096D10/native?cb=_cache_3326&channelToken=1f7d2611846d4457b213dfc9048724dc)
@@ -197,7 +198,8 @@ int test = (int) 5.123;
 | **float**  | 表示范围：绝对值为1.4E-45~3.4028235E38  | **32-bit IEEE 754** |
 | **double** | 绝对值为4.9E-324~1.7976931348623157E308 | **64-bit IEEE 754** |
 
-Java中整型的范围与机器无关（C/C++：有关）
+Java中整型的范围与机器==无关==（C/C++：有关）
+Java没有无符号的数据类型，所以没有unsigned关键词。
 
 ```java
 // 布尔变量 boolean 与整型、字符型不能相互转换
@@ -336,6 +338,12 @@ for (char x : c)// x必须未定义
 System.out.println(x);
 ```
 
+必要时可以使用下述语句暂停线程：
+
+```java
+Thread.sleep(sleep_time);// 线程停滞x毫秒
+```
+
 + **在循环中不要比较浮点数相等，因为浮点数是近似的，可能会导致不正确的循环次数和不准确的结果。**
 + **在循环体内定义的变量只能在循环体内使用。**
 
@@ -344,6 +352,8 @@ System.out.println(x);
 ```java
 import java.util.Scanner;
 Scanner reader = new Scanner(System.in);
+//参数为System.in时默认读取命令行输入的字符串。也可以以字符串变量作为参数，字符串默认以空格分割
+//可以使用useDelimiter(regex);方法设置用来分割的正则表达式字符串
 String s = reader.next();// 输入字符串，空格为分隔符
 // .nextBoolean()
 // .nextInt()
@@ -598,7 +608,7 @@ int[] integar = { 1, 2, 3 };
 ### 一维数组
 
 ```java
-byte[] a;// 声明数组时方括号内不允许指定数组长度
+byte[] a;// ⚠声明数组时方括号内不允许指定数组长度
 a = new byte[5];// 为数组分配元素
 a[0] = 0x8a;
 /*	a	[0]		[1]		[2]		[3]		[4]
@@ -766,16 +776,119 @@ System.gc();
 
 ## 类的实例
 
-### 日期
+### Date🎈
 
 `java.util.Date`
-		``+Date()   ``                                              构造方法：创建当前时间的Date对象
-		`+Date(elapseTime:long)`                    构造方法：参数为从Epoch Time开始的毫秒数
-		`+toString():String`                           返回一个字符串表示的时间
-		`+getTime():long`                                返回Epoch Time开始的毫秒数
-		`+setTime(elapseTime:long):void`      设置新的时间
+		`Date()   `                                              构造方法：创建当前时间的Date对象
+		`Date(elapseTime:long)`                    构造方法：参数为从Epoch Time开始的毫秒数
+		`.toString():String`                          返回一个字符串表示的时间
+		`.getTime():long`                               返回Epoch Time开始的毫秒数
+		`.setTime(elapseTime:long):void`     设置新的时间
+		`.after(date:Date):boolean`              判断日期是否在参数指定的日期之后
+		`.before(date:Date):boolean`            判断日期是否在参数指定的日期之前
+		`.equals(date:Date):boolean`            判断日期是否和参数指定的日期相同
+		`.compareTo(date:Date):int`              比较日期和参数指定的日期：
+																		相等时返回0，调用对象日期在前则返回负数，
+																		参数指定日期在前则返回正数
 
-### 随机数
+`SimpleDateFormat`可以自定义Date对象的输出格式。
+
+```java
+Date d = new Date();//创建当前时间的对象
+SimpleDateFormat sdf = new SimpleDateFormat("G");//创建格式对象时需定义输出日期的格式
+System.out.println(sdf.format(d));
+```
+
+格式字符串中各字母的定义如下：
+
+| 字母 | 描述                     | 示例 |
+| ---- | ------------------------ | ---- |
+| G    | 纪元标记                 | 公元 |
+| y    | 四位年份                 | 2020 |
+| M    | 月份                     | 12   |
+| d    | 一个月的日期             | 28   |
+| h    | A.M./P.M. (1~12)格式小时 | 6    |
+| H    | 一天中的小时 (0~23)      | 18   |
+| m    | 分钟数                   | 11   |
+| s    | 秒数                     | 24   |
+| S    | 毫秒数                   | 755  |
+| E    | 星期几                   | 周一 |
+| D    | 一年中的日子             | 363  |
+| F    | 一个月中第几周的周几     | 4    |
+| w    | 一年中第几周             | 1    |
+| W    | 一个月中第几周           | 5    |
+| a    | 上午/下午标记            | 下午 |
+| k    | 一天中的小时(1~24)       | 18   |
+| K    | 上午/下午(0~11)格式小时  | 6    |
+| z    | 时区                     | CST  |
+
+### Calendar🎈
+
+抽象类`java.util.Calendar`可以定义日历对象并进行操作。由于是抽象类，因此不能使用new创建对象。可以使用它的方法`getInstance()`：
+
+````
+Calendar c = Calendar.getInstance();
+````
+
+来创建日历对象。该对象包含日期（常量YEAR, MONTH, DAY_OF_MONTH, WEEK_OF_YEAR, WEEK_OF_MONTH, DAY_OF_YEAR, DAY_OF_WEEK, DAY_OF_WEEK_IN_MONTH等）、时区（常量AM_PM, HOUR, HOUR_OF_DAY, MINUTE, SECOND, MILLISECOND等）、时间（常量ZONE_OFFSET等）等信息。
+上述常量可以使用get方法输出：
+
+```java
+System.out.println(c.get(c.YEAR));
+```
+
+注意常量DAY_OF_WEEK中，星期日为1，星期一为2，以此类推；常量MONTH中一月为0，二月为1，以此类推。
+
+使用set方法可以修改日期信息，有四种调用方法，如第一种调用方法：
+
+```java
+c.set(2021,1,1);//参数均为整型。
+```
+
+将日期对象c的年、月、日改为2021、1、1。第一个参数可为负数，代表公元前，下同。
+第二种调用方法：五个整型，分别更改日期对象的年月日时分。
+第三种调用方法：六个整型：分别更改日期对象的年月日时分秒。
+第四种调用方法：第一个为Date常量，第二个为更改后的值。如：
+
+```java
+c.set(c.YEAR,2019); 
+c.add(c.DATE,10);// 可以使用add方法改变日期。后一个参数为整型，若为负数则为减少日期 
+```
+
+使用`System.out.printf`方法可以按格式输出==Date和Calendar对象==指定的日期，如：
+
+```java
+System.out.printf("%tF",c);
+```
+
+`System.out.printf`方法有一个“索引项”机制，可以重复调用字符串。格式是`%[索引]$[格式类型]`，如：
+
+```java
+System.out.printf("%1$s%3$s%2$tF%3$s%2$tT\n","Date:",c,"  ");//Date: 2020-12-29 21:30:00
+```
+
+如果连续重复使用同一个字符串，也可以使用小于号<，如`%<$s`。
+
+| 类型符 | 说明                              | 示例                               |
+| :----- | :-------------------------------- | :--------------------------------- |
+| %tc    | 包括全部日期和时间信息            | 星期一 十二月 28 15:00:00 CST 2020 |
+| %tF    | "年-月-日"格式                    | 2020-12-28                         |
+| %tD    | "月/日/年"格式                    | 10/27/07                           |
+| %tr    | "HH:MM:SS PM"格式（12时制）       | 03:00:00 下午                      |
+| %tT    | "HH:MM:SS"格式（24时制）          | 15:00:00                           |
+| %tR    | "HH:MM"格式（24时制）             | 15:00                              |
+| %tb    | 月份简称                          | Jan                                |
+| %ta    | 星期简称                          | 周一                               |
+| %tB    | 月份全称                          | January                            |
+| %tA    | 星期全称                          | 星期一                             |
+| %tC    | 年的前两位                        | 20                                 |
+| %ty    | 年的后两位                        | 20                                 |
+| %tj    | 年的第几天                        | 150                                |
+| %tm    | 两位数字的月份（不足两位前面补0） | 01                                 |
+| %td    | 两位数字的日（不足两位前面补0）   | 05                                 |
+| %te    | 月份的日（前面不补0）             | 5                                  |
+
+### Random
 
 ```java
 import java.util.Random;
@@ -838,7 +951,9 @@ ch.compareTo(char);//字符比较
 | ------------ | --------- | ------- | ---- | ----- | ------- | ---- | ----- | ------ |
 | 对应的包装类 | Character | Boolean | Byte | Short | Integer | Long | Float | Double |
 
-### Object类
+包装类中包含的常量MIN_VALUE和MAX_VALUE即基本数据类型的取值范围，如Byte.MAX_VALUE
+
+### Object
 
 | 方法       | 功能                                                         |
 | ---------- | ------------------------------------------------------------ |
@@ -846,6 +961,61 @@ ch.compareTo(char);//字符比较
 | hashCode() | 返回该对象的hash码                                           |
 | clone()    | 复制一个对象                                                 |
 | getClass() | 返回关于该对象的类的信息                                     |
+
+### BitSet🎈
+
+`java.util.BitSet`类用来创建一组特殊的数组，但是保存的是位值，且数组大小随需要增加。
+这个类定义了两个构造方法：
+
+```java
+BitSet();//无参构造，默认创建一个空数组
+BitSet(int);//有参构造，指定初始大小，所有位初始化为false
+```
+
+> `BitSet.set(int)` 方法set可以将==参数`int`指定的位==的值设为`true`。
+> 可以使用`BitSet.set(int1, int2)`来把==`int1`【包括】到`int2`【不包括】指定位==的值都设为`true`。
+> 也可以使用`BitSet.set(int, Boolean)`来设置==`int`指定位==的值为==参数`Boolean`==的值。
+> 还可以使用`BitSet.set(int1, int2, Boolean)`来把==`int1`【包括】到`int2`【不包括】指定位==的值都设为==参数`Boolean`==的值。
+
+数组的索引标号从==0==到==长度减1==。直接输出时，会输出标为1的位的序号。如：
+
+```java
+BitSet bit1 = new BitSet(16);
+BitSet bit2 = new BitSet(16);
+for (i = 0; i < 16; i++) {
+            if (i % 2 == 0) bit1.set(i);// 0101 0101 0101 0101
+            if (i % 3 == 0) bit2.set(i);// 1001 0010 0100 1001
+}
+System.out.println(bit1);
+System.out.println(bit2);`
+```
+
+输出
+`{0, 2, 4, 6, 8, 10, 12, 14}`
+`{0, 3, 6, 9, 12, 15}`
+
+`BitSet`中的方法如下：
+
+| 方法名及参数                   | 返回值  | 描述                                                         |
+| ------------------------------ | ------- | ------------------------------------------------------------ |
+| `BitSet1.and(BitSet2);`        | void    | 两个`BitSet`进行逻辑**与**操作并赋值给BitSet1                |
+| `BitSet1.or(BitSet2);`         | void    | 两个`BitSet`进行逻辑**或**操作并赋值给BitSet1                |
+| `BitSet1.xor(BitSet2);`        | void    | 两个`BitSet`进行逻辑**异或**操作并赋值给BitSet1              |
+| `BitSet1.andNot(BitSet2);`     | void    | 将BitSet1中指定的位设为0，“指定的位”是BitSet2中值为1的位     |
+| `BitSet1.clear(int);`          | void    | 1. 将`int`参数指定的位的值设置为`false`<br />2. 如果没有参数，则把BitSet1的所有值都设置为`false`<br />3. 如果有两个`int`参数（`int1, int2`），则把从`int1`【包括】到`int2`【不包括】的值都设置成`false` |
+| `BitSet1.flip(int);`           | void    | 将`int`参数指定位的值取反【`true`变`false`，`false`变`true`】<br />如果有两个`int`参数（`int1, int2`），则把从`int1`【包括】到`int2`【不包括】的值都取反 |
+| `BitSet1.cardinality();`       | int     | 返回BitSet1中值为`true`的位的数量                            |
+| `BitSet1.length();`            | int     | 返回BitSet1的位的数量                                        |
+| `BitSet1.size();`              | int     | 返回BitSet1占用的实际物理空间大小                            |
+| `BitSet1.nextClearBit(int)`    | int     | 从参数`int`开始返回第一个值为`false`的索引                   |
+| `BitSet1.nextSetBit(int)`      | int     | 从参数`int`开始返回第一个值为`true`的索引                    |
+| `BitSet1.equals(BitSet2);`     | Boolean | 判断两个`BitSet`各个位的是否完全相同                         |
+| `BitSet1.intersects(BitSet2);` | Boolean | 判断两个`BitSet`中**值为`true`的位**是否有交集               |
+| `BitSet1.isEmpty();`           | Boolean | 判断BitSet1中是否有**值为`true`的位**                        |
+| `BitSet1.get(int);`            | Boolean | 返回BitSet1中`int`参数指定的位的值                           |
+| `BitSet1.get(int1, int2);`     | BitSet  | 以BitSet的形式，返回BitSet1中从`int1`【包括】到`int2`【不包括】的值 |
+| `BitSet1.clone();`             | Object  | 复制BitSet1<br />==⚠注意返回值是Object，若赋值给另一个`BitSet`对象需要强制转换，即`(BitSet)`BitSet1.clone();`== |
+| `BitSet1.toString();`          | String  | 输出`BitSet`的字符串形式                                     |
 
 ## 修饰词
 
@@ -968,6 +1138,7 @@ for(Animal ani : Animal.values()){
 ```java
 String message = new String("I drink coffee.");//正式初始化方法，注意S大写
 String messageNew = "I drink tea";//快速格式化方法
+//String(StringA, int1, int2)构造方法：从字符串StringA提取【从int1开始，共int2个字符】的字符串
 messageNew = "Coffee对身体不好。";//字符串是一个对象，内容不可改变。尝试重新赋值只会创建一个新的字符串对象，而原有的字符串对象则被垃圾回收机制清理。
 
 System.out.println(messageNew.length());
@@ -987,12 +1158,18 @@ System.out.println(messageNew+"\n"+message);
 //提取子串
 System.out.println(messageNew.substring(6,9));//从a到b不包括b
 System.out.println(messageNew.substring(6));//从a到末尾
+//.getChars(int1, int2, Char[], int3) 将字符串从int1到【int2-1】的部分
+//存放在指定字符数组【Char[]】，从指定位置【int3】开始（无返回值）
+//.toCharArray() 将字符串转化为字符数组并返回
 
 //比较字符串内容
 System.out.println(message.equals(messageNew));//内容是否相等，返回布尔值
 //⚠ message==messageNew比较的是字符串变量存储的地址。
 System.out.println(message.compareTo(messageNew));//按照Unicode值比较字符串，返回一个值：=0说明相等，>0说明前者大于后者，<0说明后者大于前者
 //.compareToIgnoreCase() 不区分大小写进行比较
+//.startsWith(String) 判断是否以特定字符串开始
+//.endsWith(String) 判断是否以特定字符串结束
+//.contains(String) 判断是否包含特定字符串
 
 //修改字符串
 System.out.println(message.toLowerCase());//转换为小写字母
@@ -1000,7 +1177,7 @@ System.out.println(message.toUpperCase());//转换为大写字母
 //trim()：去掉头尾的空格
 System.out.println(message.replace("coffee", "wine"));
 //replace(oldChar, newChar)：将字符串中的 oldChar 用 newChar 来代替
-//oldCHar 也可以用正则表达式
+//oldChar 也可以用正则表达式
 //replaceAll 全部替换 replaceFirst 从左到右查找，只替换第一个
 
 //查找字符或子串
@@ -1009,6 +1186,7 @@ System.out.println(message.replace("coffee", "wine"));
 //这两个方法中index可省略。若指定index，则从index指定的位置开始查找
 //如果找不到，则返回 -1
 System.out.println(message.indexOf("coffee"));
+//String.match(regex) 判断字符串是否与regex正则字符串相符，返回一个布尔值
 
 //将字符和数字转换为字符串
 System.out.println("咖啡的价格是￥"+String.valueOf(50));
@@ -1020,20 +1198,105 @@ System.out.println(message.split(" ")[2]+"\n"+message.split(" ")[1]);
 ### 字符串缓冲区
 
 ```java
-//字符缓冲区
 StringBuffer buff = new StringBuffer(40);
 //构造时默认长度为16（无参构造），可定义长度。此时为空缓冲区
 //参数为字符串时，生成字符串+长度16空的缓冲区
-buff.append("I love Sundae");//追加内容，可追加基本数据类型，字符串及缓冲区
+buff.append("I love Sundae");//append方法追加内容，可追加基本数据类型，字符串及缓冲区
+//可以以基本数据类型作为参数，append方法会自动将参数转化为字符串并追加
 buff.append(", a kind of ice cream").append(", very much.");//支持连写
+buff.insert(13,"***");//insert方法可以指定字符串追加的位置
+buff.reverse();//reverse方法翻转字符串缓冲区的字符串
+buff.delete(6,13);//delete方法删除一段字符串，范围是从前一个参数到后一个参数【不包括】
+buff.replace(2,6,"!");//replace方法替换一段字符串为指定的另一段字符串，，范围是从前一个参数到后一个参数【不包括】
 String str = buff.toString();//转为字符串
 System.out.println(str);
+System.out.println(buff.charAt(3));//chatAt方法返回字符串缓冲区的【参数指定的位置】的字符
 
 //字符串与数值的转换
 Integer.parseInt("123"); //123 String->int
 //Double.parseDouble String->Double
 String.valueOf(123); //"123" int->String
 ```
+
+### 字符串分析器🎈
+
+```java
+StringTokenizer st1 = new StringTokenizer("too simple sometimes naïve");
+//第一种构造方法：将字符串按照空白字符进行分割
+StringTokenizer st2 = new StringTokenizer("伟大斗争、伟大工程、伟大事业、伟大梦想","、");
+//第二种构造方法：将第一个字符串按照【第二个字符串中各符号的任意匹配】进行分割
+System.out.println(st1.countTokens());//输出分割后的字符串数量
+System.out.println(st1.nextToken());//输出分割后的下一个字符串，同时内置计数器加1，通常用于循环语句
+System.out.println(st1.hasMoreTokens());//判断是否还有下一个字符串
+```
+
+### 正则表达式🎈
+
+| 表达式       | 含义                                                     |
+| ------------ | -------------------------------------------------------- |
+| .            | 任何一个字符                                             |
+| \d           | 一个数字【相当于[0-9]】                                  |
+| \D           | 一个非数字字符                                           |
+| \s           | 一个空格字符【[ \t\n\x0B\f\r]】                          |
+| \S           | 一个非空格字符                                           |
+| \w           | 一个字符【包含数字、大小写字母、下划线，即[a-zA-Z_0-9]】 |
+| \W           | 除\w外的其它字符                                         |
+| [abc]        | a，b或c                                                  |
+| [^abc]       | 除a，b或c的其它字符                                      |
+| [a-g&&[d-m]] | [a-g]和[d-m]的交集[d-g]                                  |
+| [a-z&&[d-m]] | [a-z]减去[d-m]的集合                                     |
+| [a-d[g-m]]   | [a-d]和[g-m]的并集                                       |
+
+| 表达式       | 含义                                                     |
+| ------------ | -------------------------------------------------------- |
+| \p{Lower}  | 小写字母：[a-z]                           |
+| \p{Upper}  | 大写字母：[A-Z]                           |
+| \p{ASCII}  | 所有  ASCII：[\x00-\x7F]                  |
+| \p{Alpha}  | 字母                                      |
+| \p{Digit}  | 数字： [0-9]                              |
+| \p{Alnum}  | 字母和数字                                |
+| \p{Punct}  | 标点符号：!#$%&"()*+,-./;<=>?@[]\^_~{}\|` |
+| \p{Graph}  | 可见字符：[\p{Alnum}\p{Punct}]            |
+| \p{Print}  | 可打印字符：[\p{Graph}\x20]               |
+| \p{Blank}  | 空格或制表符                              |
+| \p{Cntrl}  | 控件字符：[\x00-\x1Fx7F]                  |
+| \p{XDigit} | 十六进制数字： [0-9a-f-F]                 |
+| \p{Space}  | 空格字符：[  \t\n\x0B\f\r]                |
+
+| 表达式 | 含义                                     |
+| ------ | ---------------------------------------- |
+| X        | 字符x                                                        |
+| \\\\      | 反斜杠字符                                                   |
+| \\0n      | 八进制值0n的字符 （0 <= n <= 7）                             |
+| \0nn      | 八进制值0nn （0 <= n <= 7）                                  |
+| \\0mnn    | 八进制值0mnn（0 <= m <= 3，0 <= n <= 7）                     |
+| \xhh      | 十六进制值0xhh的字符                                         |
+| \uhhhh    | 十六进制值0xhhhh的字符                                       |
+| \xh...h | 十六进制值0xh...h 的字符<br />(Character.MIN_CODE_POINT  <= 0xh...h <=  Character.MAX_CODE_POINT) |
+| \t        | 制表符 （\u0009)                                             |
+| \n        | 换行字符（\u000A)                                            |
+| \r        | 回车字符 （\u000D)                                           |
+| \f        | 表单馈送字符 （\u000C)                                       |
+| \a        | 警铃字符（\u0007)                                            |
+| \e        | 转义字符 （\u001B)                                           |
+| \cx       | 对应于 x 的控件字符                                          |
+
+| 表达式 | 含义                                     |
+| ------ | ---------------------------------------- |
+| ^      | 行的开头                |
+| $      | 行的末尾                |
+| \b     | 单词边界                |
+| \B     | 非单词边界              |
+| \A     | 输入的开头              |
+| \G     | 上一个匹配的结束        |
+| \Z     | 最终的终止符（如果有）  |
+| \z     | 输入的末尾              |
+| X?     | X，一次或没有           |
+| X*     | X，多次或没有           |
+| X+     | X，一次或多次           |
+| X{n}   | X，正好n次              |
+| X{n,}  | X，至少n次              |
+| X{n,m} | X，至少n次，但不超过m次 |
 
 ## 文件与输入输出
 
@@ -1195,7 +1458,7 @@ class collegeStu{
 }
 ```
 
-`⚠覆盖.equals(重写) == true`
+`⚠覆盖.equals(重写) == true // 这两个词是一个意思`
 
 ## 多态
 
