@@ -3,11 +3,15 @@
 
 > ### 学习笔记
 >
-> > [C语言学习笔记](website_C/C_include.html)
+> > [C语言的一些常用函数](website_C/C_functions.md)
 > >
 > > [Java学习笔记](website_java/java.md)
 > >
 > > [python学习笔记](website_python/python_study.html)
+> >
+> > [C语言的指针（一些小程序）](website_C/C_pointer.md)
+> >
+> > [C语言的程序示例](website_C/C_program.md)
 
 > ### 学习资料
 >
@@ -19,11 +23,19 @@
 
 > ### 学习心得
 >
-> > [信息计量学学习笔记](website_informetrics/informetrics.html)
+> > [信息计量学-信息计量学-关于usnews\$曲阜师大的思考](website_informetrics/usnews.md)
 > >
 > > [金工日记](website_metalwork/metalwork.html)
 > >
-> > [信息安全](website_security/security.html)
+> > [信息安全-简单的隐写术](website_security/steganography.md)
+> >
+> > [计算机网络-ARP广播帧](website_security/ARP.md)
+> >
+> > [REG注册表管理](website_security/REG.md)
+> >
+> > [信息安全-记一次系统攻击实验](website_security/attackXP.md)
+> >
+> > [了解一下ADB](website_java/What'sADB.md)
 
 > ### 其他
 >
@@ -32,8 +44,6 @@
 > > [用matlab做一个滑稽](website_matlab/huaji.md)
 > >
 > > [英语课写的小剧本](website_english/English_Script.md)
-> >
-> > [了解一下ADB](website_java/What'sADB.md)
 
 （以后可能还会写其他编程语言甚至金融财务的学习笔记。）
 

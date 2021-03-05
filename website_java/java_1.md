@@ -113,7 +113,7 @@ $ javap Helloworld.class # 反编译，将字节码反编译为源码
 
 > Java程序的执行需要经过哪些步骤？如下：
 >
-> **(JavaSourceFile)----|javac.exe|---->(JavaBytecode)----|java.exe|---->{execute}**
-> **(源程序)----|编译器|---->(字节码程序)----|解释器|---->{执行}**
+> **(JavaSourceFile)----[javac.exe]---->(JavaBytecode)----[java.exe]---->{execute}**
+> **(源程序)----[编译器]---->(字节码程序)----[解释器]---->{执行}**
 
 [返回上一页](java.md)
