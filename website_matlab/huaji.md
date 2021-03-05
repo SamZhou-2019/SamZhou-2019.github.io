@@ -51,4 +51,6 @@ b=-sqrt(64-(a-4).^2)-2;
 plot(a,b,'k');%嘴型
 ```
 
-<img src="C:\Users\zhouzexu\Documents\GitHub\SamZhou-2019.github.io\website_matlab\huaji.png" alt="huaji" style="zoom:50%;" />
+效果图是这个样子：
+
+<img src="huaji.png" alt="huaji" style="zoom:50%;" />

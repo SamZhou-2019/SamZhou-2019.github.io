@@ -29,9 +29,9 @@
 >
 > > [这个西电程序员年薪竟然有这么多，原来是因为……](ruanwen/ruanwen.html)
 > >
-> > [用matlab做一个滑稽](website_matlab/huaji.html)
+> > [用matlab做一个滑稽](website_matlab/huaji.md)
 > >
-> > [英语课写的小剧本](website_english/English_Script.html)
+> > [英语课写的小剧本](website_english/English_Script.md)
 > >
 > > [了解一下ADB](website_java/adb.html)
 
