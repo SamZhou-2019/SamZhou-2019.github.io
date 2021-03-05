@@ -62,9 +62,9 @@ class Student {
    public static private final abstract protected
    ```
 
-4. 语句，表示一个或一系列操作，以==分号==结束
+4. 语句，表示一个或一系列操作，以<b style="color:red">分号</b>结束
 
-5. 块，由==花括号==括起来
+5. 块，由<b style="color:red">花括号</b>括起来
 
 6. 类，是对象的模板和蓝图
 
@@ -113,7 +113,7 @@ $ javap Helloworld.class # 反编译，将字节码反编译为源码
 
 > Java程序的执行需要经过哪些步骤？如下：
 >
-> **(JavaSourceFile)--|javac.exe|–>(JavaBytecode)--|java.exe|–>{execute}**
-> **(源程序)--|编译器|–>(字节码程序)--|解释器|–>{执行}**
+> **(JavaSourceFile)----|javac.exe|---->(JavaBytecode)----|java.exe|---->{execute}**
+> **(源程序)----|编译器|---->(字节码程序)----|解释器|---->{执行}**
 
 [返回上一页](java.md)

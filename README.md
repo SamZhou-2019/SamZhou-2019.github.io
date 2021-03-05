@@ -33,7 +33,7 @@
 > >
 > > [英语课写的小剧本](website_english/English_Script.md)
 > >
-> > [了解一下ADB](website_java/adb.html)
+> > [了解一下ADB](website_java/What'sADB.md)
 
 （以后可能还会写其他编程语言甚至金融财务的学习笔记。）
 

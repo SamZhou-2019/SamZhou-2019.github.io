@@ -24,7 +24,7 @@ classObj.classFunction();// 调用对象的方法
 ```
 
 类内数据域的缺省值：类内的数据域在未赋值前的缺省值同数组缺省值。
-==⚠注意：方法中的局部变量没有缺省值，若直接使用则会报错==。
+<b style="color:red">⚠注意：方法中的局部变量没有缺省值，若直接使用则会报错。</b>
 
 ## UML类图
 
@@ -157,7 +157,7 @@ c.set(c.YEAR,2019);
 c.add(c.DATE,10);// 可以使用add方法改变日期。后一个参数为整型，若为负数则为减少日期 
 ```
 
-使用`System.out.printf`方法可以按格式输出==Date和Calendar对象==指定的日期，如：
+使用`System.out.printf`方法可以按格式输出<b style="color:red">Date和Calendar对象</b>指定的日期，如：
 
 ```java
 System.out.printf("%tF",c);
@@ -274,12 +274,12 @@ BitSet();//无参构造，默认创建一个空数组
 BitSet(int);//有参构造，指定初始大小，所有位初始化为false
 ```
 
-> `BitSet.set(int)` 方法set可以将==参数`int`指定的位==的值设为`true`。
-> 可以使用`BitSet.set(int1, int2)`来把==`int1`【包括】到`int2`【不包括】指定位==的值都设为`true`。
-> 也可以使用`BitSet.set(int, Boolean)`来设置==`int`指定位==的值为==参数`Boolean`==的值。
-> 还可以使用`BitSet.set(int1, int2, Boolean)`来把==`int1`【包括】到`int2`【不包括】指定位==的值都设为==参数`Boolean`==的值。
+> `BitSet.set(int)` 方法set可以将<b style="color:red">参数`int`指定的位</b>的值设为`true`。
+> 可以使用`BitSet.set(int1, int2)`来把<b style="color:red">`int1`【包括】到`int2`【不包括】指定位</b>的值都设为`true`。
+> 也可以使用`BitSet.set(int, Boolean)`来设置<b style="color:red">`int`指定位</b>的值为==参数`Boolean`==的值。
+> 还可以使用`BitSet.set(int1, int2, Boolean)`来把<b style="color:red">`int1`【包括】到`int2`【不包括】指定位</b>的值都设为<b style="color:red">参数`Boolean`</b>的值。
 
-数组的索引标号从==0==到==长度减1==。直接输出时，会输出标为1的位的序号。如：
+数组的索引标号从<b style="color:red">0到长度减1</b>。直接输出时，会输出标为1的位的序号。如：
 
 ```java
 BitSet bit1 = new BitSet(16);
@@ -316,7 +316,7 @@ System.out.println(bit2);`
 | `BitSet1.isEmpty();`           | Boolean | 判断BitSet1中是否有**值为`true`的位**                        |
 | `BitSet1.get(int);`            | Boolean | 返回BitSet1中`int`参数指定的位的值                           |
 | `BitSet1.get(int1, int2);`     | BitSet  | 以BitSet的形式，返回BitSet1中从`int1`【包括】到`int2`【不包括】的值 |
-| `BitSet1.clone();`             | Object  | 复制BitSet1<br />==⚠注意返回值是Object，若赋值给另一个`BitSet`对象需要强制转换，即`(BitSet)`BitSet1.clone();`== |
+| `BitSet1.clone();`             | Object  | 复制BitSet1<br /><b style="color:red">⚠注意返回值是Object，若赋值给另一个`BitSet`对象需要强制转换，即`(BitSet)`BitSet1.clone();`</b> |
 | `BitSet1.toString();`          | String  | 输出`BitSet`的字符串形式                                     |
 
 ## 修饰词
@@ -334,17 +334,17 @@ System.out.println(bit2);`
    + public：**任意包的任意类**均可访问
    + private：只能在**本类**访问
 
-   | *访问权限符*（修饰变量和方法） | *访问权限类型*         | *变量和方法权限对比*       | *子类继承权限对比*   |                 |
-   | ------------------------------ | ---------------------- | -------------------------- | -------------------- | --------------- |
-   | private                        | 私有变量和私有方法     | 类外不能使用               | 不能继承             | 最严格  ”私有“  |
-   | 不加访问权限符                 | 友好变量和友好方法     | ==同包的类==可以使用       | ==同包的类==可以继承 | 默认情况 ”同包“ |
-   | protected                      | 受保护变量和受保护方法 | ==同包的类和子类==可以使用 | ==任何类==均可以继承 | 最复杂          |
-   | public                         | 共有变量和共有方法     | 类内外均可使用             | ==任何类==均可以继承 | 最开放  ”任意“  |
+   | *访问权限符*（修饰变量和方法） | *访问权限类型*         | *变量和方法权限对比*                            | *子类继承权限对比*                        |                 |
+   | ------------------------------ | ---------------------- | ----------------------------------------------- | ----------------------------------------- | --------------- |
+   | private                        | 私有变量和私有方法     | 类外不能使用                                    | 不能继承                                  | 最严格  ”私有“  |
+   | 不加访问权限符                 | 友好变量和友好方法     | <b style="color:red">同包的类</b>可以使用       | <b style="color:red">同包的类</b>可以继承 | 默认情况 ”同包“ |
+   | protected                      | 受保护变量和受保护方法 | <b style="color:red">同包的类和子类</b>可以使用 | <b style="color:red">任何类</b>均可以继承 | 最复杂          |
+   | public                         | 共有变量和共有方法     | 类内外均可使用                                  | <b style="color:red">任何类</b>均可以继承 | 最开放  ”任意“  |
 
-   - public类（共有类）可以在==任意==类创建对象
-   - 权限符缺省的类（友好类）只能在==同包==的类里面创建对象
+   - public类（共有类）可以在<b style="color:red">任意</b>类创建对象
+   - 权限符缺省的类（友好类）只能在<b style="color:red">同包</b>的类里面创建对象
    - private和protected不能修饰类
-   - ⚠访问修饰符不能用在==局部变量==上
+   - ⚠访问修饰符不能用在<b style="color:red">局部变量</b>上
    
 
    |               | **本类** | **本包** | **子类** | **其他包** |
