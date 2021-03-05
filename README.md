@@ -5,7 +5,7 @@
 >
 > > [C语言学习笔记](website_C/C_include.html)
 > >
-> > [Java学习笔记](website_java/java_study.html)
+> > [Java学习笔记](website_java/java.md)
 > >
 > > [python学习笔记](website_python/python_study.html)
 
