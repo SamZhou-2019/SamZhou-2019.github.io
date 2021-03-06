@@ -13,11 +13,11 @@
 ```
 Windows Registry Editor Version 5.00
 
-[RegistryPath
+[RegistryPath]
 "DataItemName"="DataType:DataValue"
 "DataItemName"="DataType:DataValue"
 
-[RegistryPath
+[RegistryPath]
 "DataItemName"="DataType:DataValue"
 ```
 
@@ -27,7 +27,7 @@ Windows Registry Editor Version 5.00
 
   在可视化注册表编辑器中，左侧展开的层次结构就是键路径，可以理解为目录。
 
-  > 创建新的子键，只需要在中括号中填写想要创建的子键即可：`[已存在的键路径\子键`
+  > 创建新的子键，只需要在中括号中填写想要创建的子键即可：`[已存在的键路径\子键]`
   >
   > 如果要删除一个键（子键），只需要在RegistryPath头部添加字符“-”即可。
   >
@@ -66,7 +66,7 @@ Windows Registry Editor Version 5.00
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced
-"ShowSecondsInSystemClock"=dword:00000001
+"ShowSecondsInSystemClock"=dword:00000001]
 ```
 
 示例：删除资源管理器中的文档/音乐/视频等文件夹
