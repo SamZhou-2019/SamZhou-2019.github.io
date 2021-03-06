@@ -93,50 +93,100 @@ fmod(double x,double y) 计算商为整数时x/y的浮点余数
 ## \#include<stdio.h>
 
 remove(const char\*) 删除文件名为指针指向的字符串的文件
+
 rename(const char\*,const char\*) 将文件名为前一个指针指向的字符串的文件的文件名改为后一个指针指向的字符串
+
 tmpfile() 临时二进制文件，运行成功则返回临时文件，否则出错并返回NULL 这是一个指针
+
 fclose(FILE\*) 关闭文件（成功返回0，否则返回EOF）
-fopen(const char \*,const char\*) 打开文件名为前一个指针指向的字符串的文件，运行成功则返回文件 这是一个指针
-e.g. fp\=fopen(fl,w);
-后一个指针：（有b的为二进制文件，否则为文本文件；若文件不存在，有w的会新建文件，否则出错并返回NULL）
+
+fopen(const char \*,const char\*) 打开文件名为前一个指针指向的字符串的文件，运行成功则返回文件。 这是一个指针。
+
+```c
+fp=fopen(fl,w);
+/*后一个指针：
+（有b的为二进制文件，否则为文本文件；若文件不存在，有w的会新建文件，否则出错并返回NULL）
 r：只读 w：只写 a：追加 r+：读写 w+：读写 a+：追加读写
-rb：只读 wb：只写 ab：追加 rb+：读写 wb+：读写 ab+：追加读写
-fprintf(FILE\*, const char \*format, data) e.g.fprintf(fp,”%d,%c”,a,b);
-将格式为format的数据data输出到指针指向的文件中去
-格式：
-d,i 十进制整数（int） u 无符号十进制整数（unsigned int） o 无符号八进制整数 c字符
-x，X 无符号十六进制整数 f浮点数，小数形式（float） s字符串
-e，E浮点数，指数形式（float） g，G 选取e和f中较短的格式输出
-以上符号与%中间加入：
-正数（如%5.2f：输出右对齐至少五位，保留两位小数）
-负数（如%-5.2f：输出左对齐至少五位，保留两位小数）
-l：为long或double；ll：为 long long \*；无效数据（不输入或输出任何数据）
-fscanf(FILE\*,const char\* format, data) e.g.fscanf(fp,”%d,%c”,a,b);
-将指针指向的文件中格式为format的数据输入到参数data中去
-printf(const char \*format, data) e.g.fprintf(”%d,%c”,a,b);
-将格式为format的数据data输出到屏幕上
-scanf(const char\* format, data) e.g.fscanf(”%d,%c”,&a,&b);
-将格式为format的数据输入到参数data中去
-sprintf(char \*s, const char \*format, data)
-将格式为format的数据data输出到数组s中去，最后添加‘\0’
-scanf(char \*s ,const char \*format, data)
-将指针指向的数组中格式为format的数据输入到参数data中去
-fgetc(FILE \*) 向指针指向的文件读取下一个字符，返回int fputc(int c,FILE \*) 向指针指向的文件写入一个字符c fgets(char \*s,int n,FILE\*) 向指针指向的文件读取n-1个字符，写入到指针s指向的数组并返回s 这是一个指针
+rb：只读 wb：只写 ab：追加 rb+：读写 wb+：读写 ab+：追加读写*/
+```
+
+fprintf(FILE\*, const char \*format, data) 将格式为format的数据data输出到指针指向的文件中去
+
+> 格式：
+> d,i 十进制整数（int） u 无符号十进制整数（unsigned int） o 无符号八进制整数 c字符
+> x，X 无符号十六进制整数 f浮点数，小数形式（float） s字符串
+> e，E浮点数，指数形式（float） g，G 选取e和f中较短的格式输出
+> 以上符号与%中间加入：
+> 正数（如%5.2f：输出右对齐至少五位，保留两位小数）
+> 负数（如%-5.2f：输出左对齐至少五位，保留两位小数）
+> l：为long或double；ll：为 long long \*；无效数据（不输入或输出任何数据）
+
+```c
+fprintf(fp,”%d,%c”,a,b);
+```
+
+fscanf(FILE\*,const char\* format, data) 将指针指向的文件中格式为format的数据输入到参数data中去
+
+```c
+fscanf(fp,”%d,%c”,a,b);
+```
+
+printf(const char \*format, data) 将格式为format的数据data输出到屏幕上
+
+```c
+fprintf(”%d,%c”,a,b);
+```
+
+scanf(const char\* format, data) 将格式为format的数据输入到参数data中去
+
+```c
+fscanf(”%d,%c”,&a,&b);
+```
+
+sprintf(char \*s, const char \*format, data)将格式为format的数据data输出到数组s中去，最后添加‘\0’
+
+scanf(char \*s ,const char \*format, data)将指针指向的数组中格式为format的数据输入到参数data中去
+
+fgetc(FILE \*) 向指针指向的文件读取下一个字符，返回int 
+
+fputc(int c,FILE \*) 向指针指向的文件写入一个字符c 
+
+fgets(char \*s,int n,FILE\*) 向指针指向的文件读取n-1个字符，写入到指针s指向的数组并返回s 这是一个指针
+
 fputs(char \*s,FILE\*) 向指针指向的文件写入指针s指向的数组
+
 getchar() 输入一个字符
+
 gets() 输入字符串，直到换行
+
 putchar(int) 输出一个字符
+
 puts(char \*s) 输出字符串s
-fread(char \*,int size,int count,FILE \*fp) e.g. fread(&a,sizeof(a),1,fp);
-将数组a中大小为size的count组数据从指针指向的文件中读取出来
-fwrite(char \*,int size,int count,FILE \*fp) e.g. fwrite(&a,sizeof(a),1,fp);
-将数组a中大小为size的count组数据输出到指针指向的文件中
+
+fread(char \*,int size,int count,FILE \*fp) 将数组a中大小为size的count组数据从指针指向的文件中读取出来
+
+```c
+fread(&a,sizeof(a),1,fp);
+```
+
+fwrite(char \*,int size,int count,FILE \*fp) 将数组a中大小为size的count组数据输出到指针指向的文件中
+
+```c
+fwrite(&a,sizeof(a),1,fp);
+```
+
 fseek(FILE\*,int a,int b) 读取指针指向的文件，位置为起始点向前移动a字节
-起始点：b\\=\\=0：文件起始位置；b\\=\\=1：当前位置；b\\=\\=2：文件末尾位置
+
+> 起始点：b\=\=0：文件起始位置；b\=\=1：当前位置；b\=\=2：文件末尾位置
+
 ftell(FILE\*) 获得当前的文件读取位置并返回该位置
+
 rewind(FILE\*) 定位到文件的起始位置
+
 clearer(FILE\*) 清除文件结束符和错误提示符
+
 feof(FILE\*) 当文件设置了文件结束符时返回非0值
+
 ferror(FILE\*) 若输入输出出现错误则返回非零值，否则返回0
 
 ## #include<stdlib.h>
