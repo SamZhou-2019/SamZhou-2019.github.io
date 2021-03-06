@@ -8,7 +8,7 @@
 > >
 > > [Java学习笔记](website_java/java.md)
 > >
-> > [python学习笔记](website_python/python.md)
+> > [python学习笔记](website_python/python.html)
 > >
 > > [C语言的指针（一些小程序）](website_C/C_pointer.md)
 > >
