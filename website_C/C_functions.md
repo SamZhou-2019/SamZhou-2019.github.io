@@ -1,8 +1,8 @@
 # 学习笔记-C语言的常用函数
 
-## \#include<ctype.h>
+## \#include\<ctype.h\>
 
-####（以下函数，是则返回“真”，否则返回“假”）
+####（以下函数，是则返回“真"，否则返回“假"）
 
 isalnum(int)判断是否为字母或数字
 
@@ -32,7 +32,7 @@ tolower(int)若为大写字母,输出小写字母
 
 toupper(int)若为小写字母,输出大写字母
 
-## \#include<errno.h>
+## \#include\<errno.h\>
 
 > 一个整数初始化为0,程序运行正常时为0,错误时为一个非0整数
 
@@ -42,7 +42,7 @@ errno\=0;
 printf("errno\=%d",errno);
 ```
 
-## \#include<math.h>
+## \#include\<math.h\>
 
 #### （三角函数单位为弧度）
 
@@ -90,7 +90,7 @@ floor(double) 向下取整（地板）
 
 fmod(double x,double y) 计算商为整数时x/y的浮点余数
 
-## \#include<stdio.h>
+## \#include\<stdio.h\>
 
 remove(const char\*) 删除文件名为指针指向的字符串的文件
 
@@ -122,25 +122,25 @@ fprintf(FILE\*, const char \*format, data) 将格式为format的数据data输出
 > l：为long或double；ll：为 long long \*；无效数据（不输入或输出任何数据）
 
 ```c
-fprintf(fp,”%d,%c”,a,b);
+fprintf(fp,"%d,%c",a,b);
 ```
 
 fscanf(FILE\*,const char\* format, data) 将指针指向的文件中格式为format的数据输入到参数data中去
 
 ```c
-fscanf(fp,”%d,%c”,a,b);
+fscanf(fp,"%d,%c",a,b);
 ```
 
 printf(const char \*format, data) 将格式为format的数据data输出到屏幕上
 
 ```c
-fprintf(”%d,%c”,a,b);
+fprintf("%d,%c",a,b);
 ```
 
 scanf(const char\* format, data) 将格式为format的数据输入到参数data中去
 
 ```c
-fscanf(”%d,%c”,&a,&b);
+fscanf("%d,%c",&a,&b);
 ```
 
 sprintf(char \*s, const char \*format, data)将格式为format的数据data输出到数组s中去，最后添加‘\0’
@@ -189,7 +189,7 @@ feof(FILE\*) 当文件设置了文件结束符时返回非0值
 
 ferror(FILE\*) 若输入输出出现错误则返回非零值，否则返回0
 
-## #include<stdlib.h>
+## #include\<stdlib.h\>
 
 #### （以下三个函数是将字符串转为指定格式）
 
@@ -213,13 +213,13 @@ abort() 使程序异常终止
 
 exit(int a) 使程序正常终止，a\=\=0表示程序运行正常，a!\=0表示程序运行不正常
 
-system(char\*) 运行外部环境命令 e.g. system(“cls”)（清除屏幕）
+system(char\*) 运行外部环境命令 e.g. system(“cls")（清除屏幕）
 
 abs(int) 绝对值 labs(int)：格式为long int
 
 div(int a,int b) a/b的整数商 ldiv(int a,int b)：格式为long int
 
-## \#include<string.h>
+## \#include\<string.h\>
 
 strcpy（char\* s1,char\* s2） 将字符串s2复制到字符串s1中 e.g.strcpy(str1,str2)
 

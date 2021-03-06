@@ -1,14 +1,12 @@
 # 旭旭的个人主页 🏡
 
-<iframe width="840" scrolling="no" height="50" frameborder="0" allowtransparency="true" src="//i.tianqi.com/index.php?c=code&id=12&bgc=%23FFFFFF&bdc=%23&icon=3&num=5&site=13"></iframe>
-
 > ### 📝学习笔记
 >
 > > [C语言的一些常用函数](website_C/C_functions.md)
 > >
 > > [Java学习笔记](website_java/java.md)
 > >
-> > [python学习笔记](website_python/python.html)
+> > [python学习笔记](website_python/Python.md)
 > >
 > > [C语言的指针（一些小程序）](website_C/C_pointer.md)
 > >
