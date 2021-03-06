@@ -24,7 +24,7 @@
 
 > ### 📌学习心得
 >
-> > [信息计量学-信息计量学-关于usnews\$曲阜师大的思考](website_informetrics/usnews.md)
+> > [信息计量学-关于usnews\$曲阜师大的思考](website_informetrics/usnews.md)
 > >
 > > [金工日记](website_metalwork/metalwork.html)
 > >
