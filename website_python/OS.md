@@ -53,4 +53,5 @@ import platform
 print(platform.system(),platform.platform(),platform.version())
 ```
 
-[返回上一页](python.html)
+[返回上一页](python.md)
+

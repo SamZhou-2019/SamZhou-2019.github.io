@@ -249,4 +249,4 @@ print('x1= '+str((-b+cmath.sqrt(d))/2*a))
 print('x2= '+str((-b-cmath.sqrt(d))/2*a))
 ```
 
-[返回上一页](python.html)
+[返回上一页](python.md)

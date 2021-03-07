@@ -423,4 +423,5 @@ t.corr().applymap(lambda x:int(x*100)/100)#lambda后面的文字表示保留两�
 pd.plotting.scatter_matrix(t, figsize=(12,9))
 ```
 
-[返回上一页](python.html)
+[返回上一页](python.md)
+

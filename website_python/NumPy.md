@@ -245,4 +245,5 @@ print(a[a1])
 print(a[4],'\n',a[6:9],'\n',a[4:],'\n')
 ```
 
-[返回上一页](python.html)
+[返回上一页](python.md)
+
