@@ -11,10 +11,6 @@
 > > [C语言的指针（一些小程序）](website_C/C_pointer.md)
 > >
 > > [C语言的程序示例](website_C/C_program.md)
-> >
-> > [python爬虫笔记（尚未完成）](website_python/PySpider.md)
-> >
-> > [Kotlin（尚未完成）](website_java/Kotlin.md)
 
 > ### 📚学习资料
 >
@@ -29,6 +25,8 @@
 > > [信息计量学-关于usnews\$曲阜师大的思考](website_informetrics/usnews.md)
 > >
 > > [金工日记](website_metalwork/metalwork.html)
+> >
+> > [电装日记](website_radio/make_a_radio.md)
 > >
 > > [信息安全-简单的隐写术](website_security/steganography.md)
 > >
@@ -54,11 +52,14 @@
 
 > 留一些要填的坑
 >
-> > Python 数据分析&网络爬虫
-> > （肯定会写，毕竟涉及到自己的专业知识，以后会学）
+> > [python爬虫笔记（尚未完成）](website_python/PySpider.md)
 > >
-> > R语言&数据挖掘
-> > （大三学过的课程，过了寒假就忘光了）
+> > [Kotlin（尚未完成）](website_java/Kotlin.md)
+> >
+> > [R语言&数据挖掘（尚未完成）](website_R/R.md)
+> >
+> > Python 数据分析
+> > （肯定会写，毕竟涉及到自己的专业知识，以后会学）
 > >
 > > 经济学&金融学&会计学
 > > （这一堆坑能填则填吧）

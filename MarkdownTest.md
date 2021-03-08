@@ -142,6 +142,10 @@ func main() {
 
 ***
 # 十、LaTeX公式  
+
+
+
+
 $$
 \alpha^2+\beta^2=1
 $$

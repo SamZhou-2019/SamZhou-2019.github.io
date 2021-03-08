@@ -1,5 +1,7 @@
 # Kotlin
 
+2021/3/6
+
 ## 1.基本格式
 
 ```kotlin
@@ -131,6 +133,8 @@ fun main(){
     for (l in 18 downTo 2) println(l)
 }
 ```
+
+2020/3/7
 
 ## 5.类和对象
 
@@ -307,3 +311,119 @@ data class Phone(val brand: String, val prive: Double)
 `hashCode`：返回非数值变量的哈希值和数值变量
 
 `toString`：返回类名和各变量的值
+
+### 单例类
+
+单例类在全局仅允许有一个实例出现，在Kotlin中需要用关键字object创建。
+
+```kotlin
+object car {
+    private var brand: String = "default"
+    private var price: Double = 0.0
+    
+    fun info() {
+        println("This car is $brand, it costs RMB$price.")
+    }
+
+    fun set(brand: String, price: Double) {
+        this.price = price
+        this.brand = brand
+    }
+}
+
+fun main() {//单例类可以直接用类名调用函数
+    car.set("BYD",400000.00)
+    car.info()
+}
+```
+
+## 6.集合
+
+### List&Set
+
+可以利用listOf创建只读列表，用mutableListOf创建可读写的列表。
+
+```kotlin
+var FiveEyes = listOf("America","English","Australia","Canada","New Zealand")
+for (eye in FiveEyes){
+    println("$eye is not a friendly country.")//可以使用for循环语句来读取
+}
+```
+
+```kotlin
+var books = mutableListOf("Economics","Python","Intelligence","Accounting")
+books.add("Kotlin")
+books.remove("Python")
+for (book in books){
+    println("I have a book teaching $book")
+}
+```
+
+Set和List大致相同。Set是使用hash映射机制来存放数据的。可以利用setOf创建只读Set列表，用mutableSetOf创建可读写的Set列表。
+
+### Map
+
+Map是一种键值对形式的数据结构。
+
+```kotlin
+var market = HashMap<String, Double>()//可以通过如下语句添加元素
+market["egg"]=1.5
+market["apple"]=3.0
+market["noodles"]=2.0
+```
+
+```kotlin
+var market=mapOf("apple" to 1,"banana" to 2,"orange" to 3)
+//也可以通过mapOf或者mutableMapOf定义
+for ((fruit,price)in market){//可以使用for循环语句来读取
+    println("$fruit is $price yuan.")
+}
+```
+
+### Lambda表达式
+
+Lambda表达式的语法结构为`{参数名1: 参数类型, 参数名2: 参数类型 -> 函数体}`
+
+```kotlin
+var list = listOf("Java","Python","Fortran","Kotlin","Matlab")
+var lambda = {lang:String -> lang.length}//这是一个lambda表达式
+var longest = list.maxBy(lambda)//maxBy表示取最大值对应的元素，minBy取最小的
+println(longest)
+/*以上代码可以简化：
+1.lambda变量无需单独定义.
+2.Kotlin规定如果lambda表达式是函数最后一个参数时，可以把表达式移到括号外；如果lambda表达式是唯一一个参数时还可以删除括号.
+3.Kotlin的参数类型推导机制，可以把String省略。
+4.如果Lambda表达式的参数列表只有一个参数，可以直接用it代替参数名。
+因此第2、3行可以写作：*/
+var longest = list.maxBy { it.length }
+var newlist = list.map { it.toUpperCase() }
+//map表示映射，这个表达式用于将单词转换为大写字母
+var newlist1 = list.filter { it.length < 6 }
+//filter表示过滤，这个表达式用于筛选长度小于6的字符串
+var newlist1 = list.any { it.length < 6 }
+var newlist1 = list.all { it.length < 6 }
+//any用于判断是否至少有一个元素都满足条件，all用于判断是否所有元素都满足条件
+```
+
+## 7.空指针
+
+Kotlin把空指针异常的检测提前到了编译时。以下代码在编译时会报错。
+
+```kotlin
+fun main() {
+    test(null)// (×) Null can not be a value of a non-null type String
+}
+
+fun test(arg1:String){
+    println("Hello, $arg1")
+}
+```
+
+### 可空类型
+
+可以在类名后加一个问号，表示这个类是可空的。
+
+```kotlin
+
+```
+
