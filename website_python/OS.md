@@ -1,4 +1,4 @@
-# OS模块
+# OS模块&异常
 
 #### https://www.runoob.com/python3/python3-os-file-methods.html
 
@@ -51,6 +51,37 @@ print(os.listdir())
 ```python
 import platform
 print(platform.system(),platform.platform(),platform.version())
+```
+
+## 异常处理
+
+### try-except-else语句
+
+```python
+try:
+#运行代码
+except Exceptions:#可以有多个异常
+#如果在try部分引发了'Exceptions'异常则执行
+except Exceptions,data:#可以有多个异常
+#如果在try部分引发了'Exceptions'异常则添加变量data执行
+else:
+#如果没有异常发生
+```
+
+### try-finally语句
+
+```python
+try:
+#语句
+finally:
+#退出try时总会执行的语句
+raise
+```
+
+### 触发异常
+
+```python
+raise Exception(args)#触发异常名为Exception的异常并输出args字符串
 ```
 
 [返回上一页](python.md)

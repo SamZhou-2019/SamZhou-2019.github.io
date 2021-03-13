@@ -1,4 +1,38 @@
-# type() 输出字符类型
+# 数据类型和注释
+
+## 变量和常量
+
+```python
+a=print("Hello, world!")
+```
+
+在屏幕上输出一个Hello world!字符串。print可以输出多种格式的数据。
+
+```python
+a=input()
+```
+
+接收输入，并赋值给a，格式为字符串。
+
+```python
+a=input("Please input a number:")
+```
+
+在屏幕上显示`Please input a number:`，接收输入，并赋值给a，格式为字符串。
+
+### 变量的命名规则
+
+- 只能由**大小写字母、数字和下划线**组成。大小写敏感。
+- 不能以数字开头，不能和保留字相同。
+- 要保证唯一性，要有意义，最好能表征变量的含义。
+
+```python
+import keyword
+print(keyword.kwlist)# 查看保留字
+'''
+['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+'''
+```
 
 ### python可以同时给多个变量赋值
 
@@ -10,14 +44,14 @@ print(type(a),type(b),type(c),type(d),type(e),type(f),type(g),type(h),type(i))
 
 分别为整数，浮点数，布尔值，复数，字符串，元组，集合，字典；复数也可以用complex(a,b)表示，即a+bj
 
-# isinstance()判断类型
+#### type() 输出字符类型，isinstance() 判断类型
 
 
 ```python
 print(isinstance(a,int))
 ```
 
-# del 删除变量
+## del 删除变量
 
 
 ```python
@@ -26,7 +60,7 @@ del a
 
 print(a) 这一步会发生错误
 
-# eval()执行一个字符串命令
+## eval()执行一个字符串命令，并返回该命令的值
 
 
 ```python
@@ -40,13 +74,17 @@ a="print('test')"
 eval(a) 
 ```
 
-# 强制转换  
+```python
+a=eval('15')#这里eval()可以将字符串类型的数字转换为数值型的数字
+```
+
+## 强制转换  
 
 str()将数值转换为字符串 
 
 repr()强制转换为表达式字符串 
 
-int(字符串,基数)强制转换为整数 
+int()强制转换为整数 `int(字符串,基数)` 
 
 long()强制转换为长整数 
 

@@ -50,16 +50,6 @@ message_a="Hello"+","+" "+message_1
 print(message_a)
 ```
 
-
-```python
-
-```
-
-
-```python
-
-```
-
 ## 字符串前加r则这个字符串中的转义符不转义，如\n,\t
 
 

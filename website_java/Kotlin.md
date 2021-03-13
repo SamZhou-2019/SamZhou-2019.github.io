@@ -424,6 +424,23 @@ fun test(arg1:String){
 可以在类名后加一个问号，表示这个类是可空的。
 
 ```kotlin
+fun test(arg1:String?){
+    println("Hello, $arg1")//在这里不会报错，直接输出Hello, null
+    println(arg1.length)//在这里会报错，因为arg1是空值，空值不能计算长度
+}
+```
 
+### 判空操作符
+
+对象在使用方法时，如果对象是可空的，则需要检验对象是否为空。可以用`?.`代替`!=null`
+
+```kotlin
+println(arg1?.length)//当arg1为空值时不进行操作
+```
+
+`?:`操作符：该分号左右两边都有表达式，如果左边表达式不为空就返回左边表达式的结果，否则返回右边表达式的结果。
+
+```kotlin
+val c = a ?: b
 ```
 
