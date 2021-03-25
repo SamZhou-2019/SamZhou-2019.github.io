@@ -14,13 +14,13 @@
 >
 >    进入实习间要发八个工具（剪刀；一字螺丝刀两个，一个金属一个塑料，塑料在调试的时候用来调中周；十字螺丝刀两个；尖嘴钳；斜口钳；剪刀。有的附带锯条，可以刮电烙铁上面的氧化层）、电表、电烙铁等。
 >
->    <img src="Day1 (1).jpg" alt="Day1 (1)" style="zoom:50%;" />
+>    <img src="Day1 (1).jpg" alt="Day1 (1)" style="zoom:75%;" />
 >
->    <img src="Day1 (3).jpg" alt="Day1 (3)" style="zoom:50%;" />
+>    <img src="Day1 (3).jpg" alt="Day1 (3)" style="zoom:75%;" />
 >
 >    还会发一批电阻和电路板。
 >
->    <img src="Day1 (2).jpg" alt="Day1 (2)" style="zoom:50%;" />
+>    <img src="Day1 (2).jpg" alt="Day1 (2)" style="zoom:75%;" />
 >
 >    把上面的电阻全部拆下来后，装到新的板子上面，再重复一次这个过程。
 >
@@ -34,25 +34,25 @@
 >
 >    因为第二天要考试，考试的内容也是同样的过程，因此要注意总结经验，认真一点。
 >
->    <img src="Day1 (5).jpg" alt="Day1 (5)" style="zoom:50%;" />
+>    <img src="Day1 (5).jpg" alt="Day1 (5)" style="zoom:75%;" />
 >
->    <img src="Day1 (4).jpg" alt="Day1 (4)" style="zoom:50%;" />
+>    <img src="Day1 (4).jpg" alt="Day1 (4)" style="zoom:75%;" />
 >
 > 2. 在收音机的电路板上面贴装部分元件。
 >
 > 首先需要在收音机电路板的贴装区域涂上锡膏，这个过程是老师操作的。
 >
-> <img src="Day1 (6).jpg" alt="Day1 (6)" style="zoom:50%;" />
+> <img src="Day1 (6).jpg" alt="Day1 (6)" style="zoom:75%;" />
 >
-> <img src="Day1 (7).jpg" alt="Day1 (7)" style="zoom:50%;" />
+> <img src="Day1 (7).jpg" alt="Day1 (7)" style="zoom:75%;" />
 >
 > **锡膏涂好后不能碰到其他地方。**你可以这么抓，涂锡膏的面可以朝外也可以朝手心。
 >
-> <img src="Day1 (8).jpg" alt="Day1 (8)" style="zoom:50%;" />
+> <img src="Day1 (8).jpg" alt="Day1 (8)" style="zoom:75%;" />
 >
 > 接下来需要手装四个小元件，需要用到镊子。**要找准位置再装，装好位置后记得用镊子轻轻按压固定。**
 >
-> <img src="Day1 (10).jpg" alt="Day1 (10)" style="zoom:50%;" />
+> <img src="Day1 (10).jpg" alt="Day1 (10)" style="zoom:75%;" />
 >
 > <img src="Day1 (9).jpg" alt="Day1 (9)" style="zoom:100%;" />
 >
@@ -60,37 +60,37 @@
 >
 > 其他的元件会在二楼的生产线上装配。
 >
-> <img src="Day1 (12).jpg" alt="Day1 (12)" style="zoom:50%;" />
+> <img src="Day1 (12).jpg" alt="Day1 (12)" style="zoom:75%;" />
 >
-> <img src="Day1 (13).jpg" alt="Day1 (13)" style="zoom:50%;" />
+> <img src="Day1 (13).jpg" alt="Day1 (13)" style="zoom:75%;" />
 >
-> <img src="Day1 (14).jpg" alt="Day1 (14)" style="zoom:50%;" />
+> <img src="Day1 (14).jpg" alt="Day1 (14)" style="zoom:75%;" />
 >
-> <img src="Day1 (15).jpg" alt="Day1 (15)" style="zoom:50%;" />
+> <img src="Day1 (15).jpg" alt="Day1 (15)" style="zoom:75%;" />
 >
-> <img src="Day1 (17).jpg" alt="Day1 (17)" style="zoom:50%;" />
+> <img src="Day1 (17).jpg" alt="Day1 (17)" style="zoom:75%;" />
 >
-> <img src="Day1 (16).jpg" alt="Day1 (16)" style="zoom:50%;" />
+> <img src="Day1 (16).jpg" alt="Day1 (16)" style="zoom:75%;" />
 >
 > **注意在两个大机器之间的传送带上面一定要看清楚是不是焊了元件（只看其中一个就行，一般情况下要么都有要么都没有）。没有要赶快拿出来然后报告老师。**
 >
-> <img src="Day1 (22).jpg" alt="Day1 (22)" style="zoom:50%;" />
+> <img src="Day1 (22).jpg" alt="Day1 (22)" style="zoom:75%;" />
 >
 > 从传送带上刚刚下来的电路板温度较高，需要小心拿取。
 >
-> <img src="Day1 (23).jpg" alt="Day1 (23)" style="zoom:50%;" />
+> <img src="Day1 (23).jpg" alt="Day1 (23)" style="zoom:75%;" />
 
 # Day2
 
 第二天要进行焊接考试，内容就是把电阻装到新的电路板上面，和第一天一样。下午就要实战了——焊收音机电路板。
 
-> <img src="Day2 (1).jpg" alt="Day2 (1)" style="zoom:50%;" />
+> <img src="Day2 (1).jpg" alt="Day2 (1)" style="zoom:75%;" />
 >
 > 第一批是要焊接中周、变压器和转轮；第二批是电容器、二极管、三极管等。由于这一块经管的同学没有学过相关知识，因此老师讲的时候要注意听，**尤其是三极管的三个脚**。
 >
-> <img src="Day2 (3).jpg" alt="Day2 (3)" style="zoom:50%;" />
+> <img src="Day2 (3).jpg" alt="Day2 (3)" style="zoom:75%;" />
 >
-> <img src="Day2 (6).jpg" alt="Day2 (6)" style="zoom:50%;" />
+> <img src="Day2 (6).jpg" alt="Day2 (6)" style="zoom:75%;" />
 >
 > 安装电容器的时候要注意电容的值，安装三极管的时候要注意其型号（这些信息都在电路图和元件上面标注着，要把各个元件和电路图一一对应。）有一个三极管只有两个引脚，要当二极管用，位置在图纸左上角。
 >
@@ -106,23 +106,23 @@
 
 电源导线、扬声器导线和天线导线在安装时先放锡再放线，**锡要少，要小心，不要弄断线**。**天线上面有四根线，要在图纸上看清四根线的安装位置。**
 
-<img src="Day3 (8).jpg" alt="Day3 (8)" style="zoom:75%;" />
+<img src="Day3 (8).jpg" alt="Day3 (8)" style="zoom:100%;" />
 
-<img src="Day3 (7).jpg" alt="Day3 (7)" style="zoom:50%;" />
+<img src="Day3 (7).jpg" alt="Day3 (7)" style="zoom:75%;" />
 
 这一天完成后即可在信号好的位置（如窗口）听到声音，可以收到中国之声。
 
-<img src="Day3 (9).jpg" alt="Day3 (9)" style="zoom:50%;" />
+<img src="Day3 (9).jpg" alt="Day3 (9)" style="zoom:75%;" />
 
 # Day4
 
 这一天老师会在示波器上调试收音机，调试完成后，安上机壳即可收工。
 
-<img src="Day4 (2).jpg" alt="Day4 (2)" style="zoom:50%;" />
+<img src="Day4 (2).jpg" alt="Day4 (2)" style="zoom:75%;" />
 
-<img src="Day4 (4).jpg" alt="Day4 (4)" style="zoom:50%;" />
+<img src="Day4 (4).jpg" alt="Day4 (4)" style="zoom:75%;" />
 
-<img src="Day4 (1).jpg" alt="Day4 (1)" style="zoom:50%;" />
+<img src="Day4 (1).jpg" alt="Day4 (1)" style="zoom:75%;" />
 
 # 考试重点（可能不完整）
 
