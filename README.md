@@ -11,6 +11,8 @@
 > > [C语言的指针（一些小程序）](website_C/C_pointer.md)
 > >
 > > [C语言的程序示例](website_C/C_program.md)
+> >
+> > [Kotlin入门](website_java/Kotlin.md)
 
 > ### 📚学习资料
 >
@@ -54,7 +56,7 @@
 >
 > > [python爬虫笔记（尚未完成）](website_python/PySpider.md)
 > >
-> > [Kotlin（尚未完成）](website_java/Kotlin.md)
+> > [微观经济学笔记（尚未完成）](website_economics/microeco.md)
 > >
 > > [R语言&数据挖掘（尚未完成）](website_R/R.md)
 > >

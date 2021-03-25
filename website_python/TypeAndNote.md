@@ -129,7 +129,7 @@ while i<256:
 	i=i+1
 ```
 
-# 注释
+## 注释
 
 
 ```python
@@ -144,6 +144,22 @@ print('1')
 """
 #这也是注释。
 #单行注释。 
+```
+
+## 布尔函数
+
+`bool(variable)`：对于布尔函数的输出值，只有两种结果：True和False
+
+输出为False的情形：空（即：[] () {} “”）、None、0
+
+```python
+bool(0) #False
+bool("") #False
+bool([]) #False
+a=[""]
+bool(a) #True
+a=("")
+bool(a) #False 
 ```
 
 [返回上一页](python.md)

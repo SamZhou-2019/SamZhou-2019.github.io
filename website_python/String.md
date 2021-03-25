@@ -77,7 +77,7 @@ print(a)
 
 ## 2.简单的字符串函数
 
-## .lstrip()为删除左边空格，.rstrip()为删除右边空格，.strip()为删除两边空格
+.lstrip()为删除左边空格，.rstrip()为删除右边空格，.strip()为删除两边空格
 
 
 ```python
@@ -85,77 +85,77 @@ a="   asdf   "
 print("lst:"+a.lstrip()+"end\nrst:"+a.rstrip()+"end\nst:"+a.strip()+"end")
 ```
 
-### 变量后加.title()，输出的每个单词首字母变为大写
+变量后加.title()，输出的每个单词首字母变为大写
 
 
 ```python
 print(message.title())
 ```
 
-### 变量后加.upper()，输出后每个字母变为大写
+变量后加.upper()，输出后每个字母变为大写
 
 
 ```python
 print(message.upper())
 ```
 
-### 变量后加.lower()，输出后每个字母变为小写
+变量后加.lower()，输出后每个字母变为小写
 
 
 ```python
 print(message.lower())
 ```
 
-### 变量后加.capitalize()，输出的每句话首字母变为大写
+变量后加.capitalize()，输出的每句话首字母变为大写
 
 
 ```python
 print(message.capitalize())
 ```
 
-### len(str)统计字符数量
+len(str)统计字符数量
 
 
 ```python
 print(len(message))
 ```
 
-### str.count('a')统计字符串中字符出现的次数
+str.count('a')统计字符串中字符出现的次数
 
 
 ```python
 print(message.count('l'))
 ```
 
-### str.replace('a','b')替换其中的字符
+str.replace('a','b')替换其中的字符
 
 
 ```python
 print(message.replace('!','.'))
 ```
 
-### string.center(n,str) 输出一个string居中n为长度str为填充字符的字符串
+string.center(n,str) 输出一个string居中n为长度str为填充字符的字符串
 
 
 ```python
 print('hello world'.center(50,'*'))
 ```
 
-### string.count(str,a,b) 在string中a到b范围内查找str出现的次数
+string.count(str,a,b) 在string中a到b范围内查找str出现的次数
 
 
 ```python
 print('aaaaaaabbbbbbccc'.count('a',3,14))
 ```
 
-### string.endswith(str,a,b) 在string中a到b范围内检查是否以str结尾（startswith是否以str起始）
+string.endswith(str,a,b) 在string中a到b范围内检查是否以str结尾（startswith是否以str起始）
 
 
 ```python
 print('xidianuniversity'.endswith('sit',0,-1))
 ```
 
-### 可直接输出True和False
+可直接输出True和False
 
 
 ```python
@@ -173,7 +173,7 @@ print(False)
 >
 > string.swapcase() 大小写转换
 >
-> string.split(str,num) 以 str 为分隔符截取字符串，如果 num 有指定值，则仅截取 num+1 个子字符串
+> string.split(str,num) 以 str 为分隔符截取字符串。str未指定时默认为空格。num未指定值时默认截取所有；如果 num 有指定值，则仅截取 num+1 个子字符串
 >
 > string.splitlines([keepends]) 按照行('\r', '\r\n', \n')分隔，返回一个包含各行作为元素的列表，如果参数 keepends 为 False，不包含换行符，如果为 True，则保留换行符。
 >
@@ -181,9 +181,9 @@ print(False)
 >
 > string.expandtabs(tabsize=int)把字符串 string 中的 tab 符号转为空格
 >
-> string.find(str,a,b) 在string中a到b范围内检查是否含有str并返回位置，否则返回-1 rfind从右边开始
+> string.find(str,a,b) 在string中a到b范围内检查是否含有str并返回第一个的位置（在整个字符串的位置），否则**返回-1**。a和b不写则查找整个字符串。 rfind从右边开始
 >
-> string.index(str,a,b) 在string中a到b范围内检查是否含有str并返回位置，否则报错 rindex从右边开始
+> string.index(str,a,b) 在string中a到b范围内检查是否含有str并返回第一个的位置（在整个字符串的位置），否则**报错**。a和b不写则查找整个字符串。 rindex从右边开始
 >
 > string.join(str1,str2,...) 将序列中的元素以指定的字符string连接生成一个新的字符串
 
@@ -238,23 +238,23 @@ print(a.isnumeric())
 ```
 
 #### 如string.
-isalnum() 字母或数字
-
-isalpha() 字母
-
-isdigit() 数字
-
-islower() 小写字母
-
-isnumeric() 数字字符（Unicode数字，全角数字，罗马数字，汉字数字，指数分数等
-
-istitle() 首字母大写
-
-isupper() 大写字母
-
-isdecimal() 十进制字符
-
-isspace() 空白
+> isalnum() 字母或数字
+>
+> isalpha() 字母
+>
+> isdigit() 数字
+>
+> islower() 小写字母
+>
+> isnumeric() 数字字符（Unicode数字，全角数字，罗马数字，汉字数字，指数分数等）
+>
+> istitle() 首字母大写
+>
+> isupper() 大写字母
+>
+> isdecimal() 十进制字符
+>
+> isspace() 空白
 
 ## 6.编码
 
