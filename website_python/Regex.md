@@ -15,8 +15,11 @@ print(re.match(r"[A-Za-z]*","pi=3.14159").group(0))#输出组号所对应的字�
 ```
 
 > <re.Match object; span=(0, 2), match='pi'>
+>
 > (0, 2)
+>
 > pi
+>
 > pi
 
 
@@ -32,8 +35,11 @@ print(re.search(r"([A-Za-z]+) more than ([A-Za-z]+)","I love Python more than Ja
 ```
 
 > <re.Match object; span=(7, 28), match='Python more than Java'>
+>
 > (7, 28)
+>
 > Python more than Java
+>
 > Python
 
 
@@ -72,14 +78,15 @@ print(re.compile(r"([A-Za-z]+)").findall("I love Python more than Java."))
 > re.split(正则表达式,字符串,分隔次数,可选标志)  按照能够匹配的子串将字符串分割后返回列表。分隔次数省略表示默认为0（不限制次数）
 
 ### 可选标志
-| 修饰符 | 描述 |
-| ------ | ---- |
-| re.I | 使匹配对大小写不敏感 |
-| re.L | 做本地化识别（locale-aware）匹配<br>表示特殊字符集 \w, \W, \b, \B, \s, \S 依赖于当前环境 |
-| re.M | 多行匹配，影响 ^ 和 $ |
-| re.S | 使 . 匹配包括换行在内的所有字符 |
-| re.U | 根据Unicode字符集解析字符。这个标志影响<br> \w, \W, \b, \B, \d, \D, \s, \S. |
-| re.X | 该标志通过给予你更灵活的格式以便你将正则表达式写得更易于理解。<br>如为了增加可读性，忽略空格和 # 后面的注释 |
+
+| 修饰符 | 描述                                                         |
+| ------ | ------------------------------------------------------------ |
+| re.I   | 使匹配对大小写不敏感                                         |
+| re.L   | 做本地化识别（locale-aware）匹配<br>表示特殊字符集 \w, \W, \b, \B, \s, \S 依赖于当前环境 |
+| re.M   | 多行匹配，影响 ^ 和 $                                        |
+| re.S   | 使 . 匹配包括换行在内的所有字符                              |
+| re.U   | 根据Unicode字符集解析字符。这个标志影响<br> \w, \W, \b, \B, \d, \D, \s, \S. |
+| re.X   | 该标志通过给予你更灵活的格式以便你将正则表达式写得更易于理解。<br>如为了增加可读性，忽略空格和 # 后面的注释 |
 
 [正则表达式的语法请参考这里](https://SamZhou-2019.github.io/website_java/java_8.html)
 
