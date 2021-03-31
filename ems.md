@@ -108,6 +108,11 @@
 
 [经管院2+2培养方案.pdf(OneDrive)](https://stuxidianeducn-my.sharepoint.com/:b:/g/personal/zxzhou_stu_xidian_edu_cn/Eer6uP_gzU1AmWuaNuX5YoQB62sV-aDooOjn4KahxnBkhg?e=9NBGv0)
 
+| 相关网站                                                     | [经济与管理学院网站](https://ems.xidian.edu.cn/index.htm)   | [网站地图](https://ems.xidian.edu.cn/images/ditu.png)       |
+| ------------------------------------------------------------ | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| [信息管理系](https://ems.xidian.edu.cn/szdw/zrjs/xxglx.htm)  | [工商管理系](https://ems.xidian.edu.cn/szdw/zrjs/gsglx.htm) | [管理工程系](https://ems.xidian.edu.cn/szdw/zrjs/glgcx.htm) |
+| [经济与金融系](https://ems.xidian.edu.cn/szdw/zrjs/jjyjrx.htm) | [电子商务系](https://ems.xidian.edu.cn/szdw/zrjs/dzswx.htm) | [公共管理系](https://ems.xidian.edu.cn/szdw/zrjs/ggglx.htm) |
+
 #  走进信管，成为大数据专家
 
 ### 系主任 窦永香 yxdou@xidian.edu.cn
