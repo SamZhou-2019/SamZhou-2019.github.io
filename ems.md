@@ -97,7 +97,11 @@
 
 包括三大模块:专业特色模块（行政管理学、公共经济学、政治学原理、行政法与行政诉讼法、财政学、公共部门人力资源管理、政府绩效管理、地方政府管理学、秘书学、领导科学与艺术、预测与决策、公共管理、政府公共关系等）﹔信息管理技术及应用模块（计算机导论与程序设计、数据结构、数据库原理与应用、信息管理与信息系统、电子政务、电子政务模拟实验、文本分析与文本挖掘、社交媒体与社会网络分析等）﹔写作与交流沟通能力提升模块（社会调查研究方法、质性研究方法、量化研究方法、科技论文写作等）。
 
-详情请查看： [经管院2+2培养方案.pdf](https://stuxidianeducn-my.sharepoint.com/:b:/g/personal/zxzhou_stu_xidian_edu_cn/Eer6uP_gzU1AmWuaNuX5YoQB62sV-aDooOjn4KahxnBkhg?e=9NBGv0) 
+详情请查看： 
+
+[经管院2+2培养方案.pdf(GitHub，可能会有点慢)](经管院2+2培养方案.pdf) 
+
+[经管院2+2培养方案.pdf(OneDrive)](https://stuxidianeducn-my.sharepoint.com/:b:/g/personal/zxzhou_stu_xidian_edu_cn/Eer6uP_gzU1AmWuaNuX5YoQB62sV-aDooOjn4KahxnBkhg?e=9NBGv0)
 
 #  走进信管，成为大数据专家
 
