@@ -15,6 +15,10 @@
 > > [C语言的程序示例](website_C/C_program.md)
 > >
 > > [Kotlin入门](website_java/Kotlin.md)
+> >
+> > [MatLab笔记](website_matlab/matlab.md)
+> >
+> > [数据结构笔记](website_C/DS.md)
 
 > ### 📚学习资料
 >
