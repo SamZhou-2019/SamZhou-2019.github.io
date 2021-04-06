@@ -79,27 +79,27 @@ a'# 矩阵转置
 | 1、通用操作指令                                 |                                                              |                                                              |
 | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 指令                                            | 含义                                                         | 举例                                                         |
-| cd                                              | 设置当前工作日录                                             | cd c:\mydir                                                  |
-| path                                            | 显示当前工作路径                                             | path                                                         |
-| addpath                                         | 添加工作路径                                                 | addpath c:\matlab\work                                       |
-| md                                              | 新建文件夹                                                   | !md c:\matlab\work                                           |
-| mkdir                                           | 新建文件夹                                                   | mkdir(‘c:\matlab\work’)                                      |
-| dir                                             | 列出指定目录下的文件和子目录清单                             | dir                                                          |
-| delete                                          | 删除指定文件                                                 | delete exam.m                                                |
-| clf                                             | 清除图形窗                                                   | clf                                                          |
-| clc                                             | 清除指令窗口中显示内容                                       | clc                                                          |
-| clear                                           | 清除MATLAB工作空间中保存的变量                               | clear                                                        |
-| edit                                            | 打开M文件编辑器                                              | edit  c:\matlab\wook\exam.m                                  |
-| exit                                            | 关闭/退出MATLAB                                              | exit                                                         |
-| quit                                            | 关闭／退出MATLAB                                             | quit                                                         |
-| who                                             | 显示内存变量                                                 | who                                                          |
-| whos                                            | 显示内存变量大小                                             | whos                                                         |
-| which                                           | 指出其后文件所在的目录                                       | which                                                        |
-| what                                            | 列出指定目录下的m文件                                        | What                                                         |
-| length                                          | 求变量长度                                                   | Length(x),其中x为某一变量                                    |
-| hold                                            | 保持当前图形不进行刷新                                       | hold on/ hold off                                            |
-| linspace                                        | 生成等间距向量                                               | linspace(x1, x2, n)，其中x1是初值，x2是终值，n为向量个数     |
-| meshgrid                                        | 产生平面区域内的网格坐标矩阵                                 | [x,y]=meshgrid(x1:(x2-x1)/n:x2)，其中其中x1是下限，x2是上限，(x2-x1)/n  为步长 |
+| cd                                              | 设置当前工作日录                                             | `cd c:\mydir`                                                |
+| path                                            | 显示当前工作路径                                             | `path`                                                       |
+| addpath                                         | 添加工作路径                                                 | `addpath c:\matlab\work`                                     |
+| md                                              | 新建文件夹                                                   | `md c:\matlab\work`                                          |
+| mkdir                                           | 新建文件夹                                                   | `mkdir(‘c:\matlab\work’)`                                    |
+| dir                                             | 列出指定目录下的文件和子目录清单                             | `dir`                                                        |
+| delete                                          | 删除指定文件                                                 | `delete exam.m`                                              |
+| clf                                             | 清除图形窗                                                   | `clf`                                                        |
+| clc                                             | 清除指令窗口中显示内容                                       | `clc`                                                        |
+| clear                                           | 清除MATLAB工作空间中保存的变量                               | `clear`                                                      |
+| edit                                            | 打开M文件编辑器                                              | `edit  c:\matlab\wook\exam.m`                                |
+| exit                                            | 关闭/退出MATLAB                                              | `exit`                                                       |
+| quit                                            | 关闭／退出MATLAB                                             | `quit`                                                       |
+| who                                             | 显示内存变量                                                 | `who`                                                        |
+| whos                                            | 显示内存变量大小                                             | `whos`                                                       |
+| which                                           | 指出其后文件所在的目录                                       | `which`                                                      |
+| what                                            | 列出指定目录下的m文件                                        | `what`                                                       |
+| length                                          | 求变量长度                                                   | `length(x)`,其中x为某一变量                                  |
+| hold                                            | 保持当前图形不进行刷新                                       | `hold on`/ `hold off`                                        |
+| linspace                                        | 生成等间距向量                                               | l`inspace(x1, x2, n)`，其中x1是初值，x2是终值，n为向量个数   |
+| meshgrid                                        | 产生平面区域内的网格坐标矩阵                                 | `[x,y]=meshgrid(x1:(x2-x1)/n:x2)，`其中其中x1是下限，x2是上限，(x2-x1)/n  为步长 |
 | 2、数据显示格式控制指令                         |                                                              |                                                              |
 | 指令                                            | 含义                                                         | 举例说明                                                     |
 | format  short                                   | 通常保证小数点后4位有效数字，最多不超过7位；对于大于1000的实数，用5位有效数字的科学记敷形式显示 | 314.159被显示为314.1590；3141.59被显示为3.1416e+003          |

@@ -41,6 +41,8 @@ for n in e:
         print(str(n)+' 是一个偶数。')
 ```
 
+`range(5)`等价于`range(0,5,1)`；`range(3,7)`等价于`range(3,7,1)`。
+
 ## 3.简单函数运算
 
 
