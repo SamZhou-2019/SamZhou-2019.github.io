@@ -8,7 +8,7 @@
 > - R可运行与多种平台之上，包括Windows、Unix和Mac OS X。这基本上意味着它可以运行于你所能拥有的任何计算机上。
 > - 国际上R语言已然是专业数据分析领域的标准
 
-R语言可以在[CRAN](https://cran.r-project.org/mirrors.html)上免费下载，推荐一个R语言的可视化IDE：[R Studio]([http](http://www.rstudio.com/)[://www.rstudio.com](http://www.rstudio.com/)[/](http://www.rstudio.com/))。
+R语言可以在[CRAN](https://cran.r-project.org/mirrors.html)上免费下载，推荐一个R语言的可视化IDE：[R Studio](http://www.rstudio.com/)(http://www.rstudio.com/)。
 
 ```R
 print("Hello","world")
