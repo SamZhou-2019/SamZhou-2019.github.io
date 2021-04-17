@@ -1,6 +1,6 @@
 # 文件
 
-## 1.打开文件
+## 1.打开文本文件
 
 ### 逐数读取并输出
 
@@ -28,9 +28,9 @@ with open('pi.txt') as pi:
         print(line.strip())#清除空行
 ```
 
-## 2.读取文件并进行只读操作
+## 2.读取文本文件并进行只读操作
 
-### 实例：输出文件的行数
+### 实例：输出文本文件的行数
 
 
 ```python
@@ -61,11 +61,15 @@ while a is not '#':
 
 > file.tell() 返回文件位置
 >
+> file.read().spiltlines() 将读取到的文本按行分割并存储为列表
+>
+> file.truncate() 清除定位后的内容
+>
 > file.seek(x,n) 从某位置（n=1当前位置，n=0开头，n=2结尾）移动x个字节
 >
 > file.close 关闭文件
 
-## 3.写文件
+## 3.写文本文件
 
 
 ```python
@@ -99,6 +103,22 @@ with open('file_2.txt','w') as file:
 with open('file_2.txt','r') as file:
     f=file.read()
     print(f)
+```
+
+## 4.读写csv（逗号分隔符）文件
+
+```python
+import csv
+output_list = ['1','2','3','4']
+with open('test.csv','w',encoding='utf-8') as csvfile:# 以UTF-8编码格式打开文件
+    w = csv.writer(csvfile)# 创建写入对象
+    w.writerow(output_list)# 写入文件
+    csvfile.close()
+
+with open('test.csv','r',encoding='utf-8') as csvfile:# 以UTF-8编码格式打开文件
+    r = csv.reader(csvfile)# 创建读取对象
+    for row in r:
+        print(row)# 按行读取，输出的格式为列表
 ```
 
 [返回上一页](python.md)

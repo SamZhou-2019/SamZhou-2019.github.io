@@ -27,6 +27,8 @@
 > > [组织行为学复习范围](webpage_management/Organizational_Behavior.htm)
 > >
 > > [西电暑实网课答案](webpage_shushi_2019/shushi_2019.html)
+> >
+> > [西电写作与交流网课答案](webpage_shushi_2019/WritingAndCommunicating.md)
 
 > ### 📌学习心得
 >

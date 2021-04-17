@@ -42,8 +42,8 @@ print(re.search(r"([A-Za-z]+) more than ([A-Za-z]+)","I love Python more than Ja
 >
 > Python
 
-
 ## re.sub
+
 替换匹配的字符串
 
 
@@ -74,6 +74,8 @@ print(re.compile(r"([A-Za-z]+)").findall("I love Python more than Java."))
 > ## 其他函数
 >
 > re.finditer(正则表达式,字符串,可选标志)  匹配所有的字符串并返回一个用于循环的迭代器
+>
+> re.findall(正则表达式,字符串,可选标志)  匹配所有的字符串并返回一个列表
 >
 > re.split(正则表达式,字符串,分隔次数,可选标志)  按照能够匹配的子串将字符串分割后返回列表。分隔次数省略表示默认为0（不限制次数）
 
