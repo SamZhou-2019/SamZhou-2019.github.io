@@ -1,5 +1,7 @@
 # 爬虫笔记
 
+[toc]
+
 ## 1.最简单的爬虫
 
 获取页面HTML
@@ -93,6 +95,10 @@ data_dict={'key':'value','name':'sam','age':'8'}
 r=requests.post(url,data=data_dict)
 print(r.text)
 print(r.status_code)
+
+import json
+with open('test.json','w',encoding='utf-8') as f:
+    json.dump(r.text,f)# 可以将返回的json代码写入json格式的文件
 ```
 
 会返回一段json代码，其中包含：
@@ -190,7 +196,7 @@ for x in range(len(translation)):
 需要在命令行提前安装selenium
 
 ```powershell
-pip install selenium
+> pip install selenium
 ```
 
 并下载geckdriver.exe，复制到FIrefox安装目录（否则会报错）
@@ -321,7 +327,7 @@ for div in divs:
 需要提前安装BeautifulSoup：
 
 ```powershell
-pip install bs4
+> pip install bs4
 ```
 
 示例：解析7K7K网站中的所有链接
@@ -374,13 +380,13 @@ from bs4 import BeautifulSoup# bs插件
 import requests# requests插件
 import os# os用来保存图片
 
-def findall(url):
+def get(url):
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36'}
     # 给请求指定一个请求头来模拟chrome浏览器
     return requests.get(url,headers=headers)# 获取网页源文件
   
 url='https://www.7k7k.com/'
-test=findall(url)
+test=get(url)
 
 soup=BeautifulSoup(test.text,'lxml')# 利用lxml解析网页源文件
 finds=soup.find_all('img')# 寻找带有img标签的所有代码
@@ -588,4 +594,356 @@ for t in threads:
     
 print ("Exiting Main Thread")
 ```
+
+## 7.Scrapy
+
+Scrapy 是用 Python 实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架，常应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。
+
+详细的信息可以参考Scrapy中文参考文档：https://scrapy-chs.readthedocs.io/zh_CN/latest/index.html
+
+### 第一步：安装
+
+在命令行使用pip工具安装Scrapy框架：
+
+```powershell
+> pip install Scrapy
+```
+
+安装完成后，只需在命令行输入scrapy，提示`Scrapy 【版本号】 - no active project`，证明安装成功。
+
+### 第二步：新建项目
+
+在项目目录中新建一个新的scrapy项目，在命令行输入：
+
+```powershell
+> scrapy startproject mySpider
+```
+
+将会显示以下文字，说明创建成功（以anaconda为例）：
+
+> New Scrapy project 'mySpider', using template directory 'c:\programdata\anaconda3\lib\site-packages\scrapy\templates\project', created in:
+>     【当前目录】\mySpider
+>
+> You can start your first spider with:
+>     cd mySpider
+>     scrapy genspider example example.com
+
+mySpider为项目名称。可以看到将会创建一个mySpider文件夹，目录大致如下：
+
+> mySpider/
+>
+> |—scrapy.cfg                              项目的配置文件。
+>
+> |—mySpider/                             项目的Python模块，将会从这里引用代码。
+>
+> ​	|—\_\_init\_\_.py
+>
+> ​	|—items.py                             项目的目标文件。
+>
+> ​	|—pipelines.py                       项目的管道文件。
+>
+> ​	|—settings.py                         项目的设置文件。
+>
+> ​	|—spiders/                             存储爬虫代码目录。
+>
+> ​		|—\_\_init\_\_.py
+>
+> …
+
+### 第三步：创建爬虫类
+
+打开mySpider/items.py，修改为自己需要的内容，如
+
+```python
+import scrapy
+
+class MyspiderItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    name = scrapy.Field()
+    pic = scrapy.Field()
+    href = scrapy.Field()
+```
+
+### 第四步：制作爬虫
+
+在当前目录输入如下命令，在该目录创建一个名为test的爬虫，并指定爬取的域名范围。我们取4399.com作为域名范围，即：
+
+```powershell
+> cd mySpider
+> scrapy genspider test "4399.com"
+# 输出： Created spider 'test' using template 'basic' in module:
+#         mySpider.spiders.test
+```
+
+此时mySpider/spider文件夹下新增了一个文件test.py，内容如下：
+
+```python
+import scrapy
+
+class TestSpider(scrapy.Spider):
+    name = 'test' # 爬虫的唯一识别名称
+    allowed_domains = ['4399.com'] # 爬虫的域名范围，不包含该域名的URL会被忽略
+    start_urls = ['http://4399.com'] # 爬虫的最初始页面，以列表的形式定义
+
+    def parse(self, response):
+        pass
+
+```
+
+可以修改start_urls的值为需要爬取的第一个URL，如`start_urls = ['https://www.4399.com']` 。
+
+同时修改`parse()`方法，将整个网页写入一个超文本文本。
+
+```python
+import scrapy
+
+class TestSpider(scrapy.Spider):
+    name = 'test'
+    allowed_domains = ['4399.com']
+    start_urls = ['https://www.4399.com/']
+
+    def parse(self, response):
+        filename = "test.html"
+        open(filename, 'wb').write(response.body)
+
+```
+
+然后在当前目录尝试运行以下命令：
+
+```powershell
+> scrapy crawl test
+```
+
+运行结果若出现`Traceback (most recent call last):`即为出现错误，需检查错误原因。最后出现`[scrapy.core.engine] INFO: Spider closed (finished)`即为爬虫完成退出。
+
+### 第五步：爬取指定元素
+
+爬取时需要XPath表达式。XPath将XML超文本文档看作树状结构，使用路径表达式来选取XML文档中的节点或节点集，以下是常用的元素：
+
+| 表达式                                                       | 描述                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| nodename                                                     | 选取此节点的所有子节点<br />如：div 选取div元素的所有子节点。 |
+| /                                                            | 从根节点选取<br />如：/html/head/title: 选择HTML文档中\ <head\> 标签内的 \<title\> 元素<br />如/html/head/title/text(): 选择上面提到的 \<title\> 元素的文字 |
+| //                                                           | 选取所有元素而不考虑它们的位置<br />如//td：选择所有的 \<td\> 元素，而不管它们在文档中的位置。 |
+| .                                                            | 选取当前节点                                                 |
+| ..                                                           | 选取当前节点的父节点                                         |
+| @                                                            | 选取属性<br />如：//@lang	选取名为 lang 的所有属性。<br />如：//div[@class="mine"]: 选择所有具有 class="mine" 属性的 div 元素 |
+| \*                                                           | 匹配任何元素节点<br />如：@\*  表示匹配任何属性的节点        |
+| \|                                                           | 路径表达式之间使用，表示“或”                                 |
+| node()                                                       | 匹配任何类型的节点                                           |
+| <br />\[1\]<br />[last()]<br />[last()-1]<br />[position()<5] | 位于标签名后，分别代表选取：<br />第一个元素<br />最后一个元素<br />倒数第二个元素<br />前四个元素 |
+
+例如爬取目标网站的标题和描述：
+
+```python
+import scrapy
+
+class TestSpider(scrapy.Spider):
+    name = 'test'
+    allowed_domains = ['4399.com']
+    start_urls = ['https://www.4399.com/']
+
+    def parse(self, response):
+        # 使用XPath表达式进行选取，如网站标题
+        title = response.xpath('/html/head/title/text()').extract_first()
+        # .extract_first()仅提取第一个发现的节点，可以使用.extract()提取所有发现的节点并以元素形式保存。下一句选取网站描述
+        context = response.xpath('/html/head/meta[@name="description"]/@content').extract()
+        print(title)
+        print(context)
+        pass
+```
+
+即可在输出的代码中找到爬取结果。爬取结果可以保存为json格式、json lines（.jsonl）格式（默认Unicode编码）、xml格式、csv格式等。在命令后加`-o 【文件名】`即可，如：`scrapy crawl test -o testScrapy.xml`。
+
+引入之前定义的MyspiderItem，`from mySpider.items import MyspiderItem`，然后将爬取的信息以MyspiderItem定义的形式封装起来：
+
+```python
+import scrapy
+from mySpider.items import MyspiderItem
+
+class TestSpider(scrapy.Spider):
+    name = 'test'
+    allowed_domains = ['4399.com']
+    start_urls = ['https://www.4399.com/']
+
+    def parse(self, response):
+        # 建立一个用于存放爬取数据的列表
+        items = []
+
+        for each in response.xpath('//li/a'):
+            # 将爬取的数据封装为MyspiderItem对象
+            item = MyspiderItem() 
+            
+            name = each.xpath('text()').extract()
+            pic = each.xpath('//img/@src').extract()
+            href = each.xpath('@href').extract()
+
+            if (name!=[]):
+                item['name']=name[0]
+            else:
+                item['name']='None'
+            if (pic!=[]):
+                item['pic']=pic[0]
+            else:
+                item['pic']='None'
+            if (href!=[]):
+                item['href']=href[0]
+            else:
+                item['href']='None'
+            # 注意.extract()返回的是一个列表
+            items.append(item)
+
+        return items
+```
+
+## 8.反爬虫问题
+
+### 1.修改请求头
+
+```python
+# 默认请求头
+import requests
+r = requests.get('https://cn.bing.com')
+print(r.request.headers)
+# {'User-Agent': 'python-requests/2.19.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*','Connection': 'keep-alive'}
+
+# 指定请求头
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'}
+r = requests.get('https://cn.bing.com', headers=headers)
+print(r.request.headers)
+# {'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+
+# 通过随机频繁更换请求头以避免反爬
+ua = UserAgent()
+r = requests.get('https://cn.bing.com', headers={"User-Agent": ua.random})
+print(r.request.headers)
+# {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'}
+```
+
+### 2.修改间隔时间
+
+```python
+import time
+import random
+
+t1=time.time()
+time.sleep(random.randint(0,5))
+t2=time.time()
+print(t2-t1)
+```
+
+### 3.使用代理
+
+```python
+import requests
+
+link = "http://www.xxx.com/"
+proxies = {'http':'http://xxx.xxx.xxx.xxx:xxxx'}
+response = requests.get(link, proxies=proxies)
+```
+
+## 9.中文编码问题
+
+### 1.中文编码基础函数
+
+```python
+str="西安电子科技大学"
+print(str) # 西安电子科技大学
+print(type(str)) # <class 'str'>
+```
+
+以GB2312和UTF-8编码方式为例：
+
+```python
+# 使用GB2312编码方式进行编码
+str_gb2312=str.encode('gb2312')
+print(str_gb2312) 
+# b'\xce\xf7\xb0\xb2\xb5\xe7\xd7\xd3\xbf\xc6\xbc\xbc\xb4\xf3\xd1\xa7'
+print(type(str_gb2312)) # <class 'bytes'>
+# 使用UTF-8编码方式进行编码并解码
+str_utf8_decode=str.encode('utf8').decode('utf8')
+print(str_utf8_decode) # 西安电子科技大学
+print(type(str_utf8_decode)) # <class 'str'>
+# 猜测编码方式
+import chardet
+print(chardet.detect(str_gb2312))
+# {'encoding': 'GB2312', 'confidence': 0.99, 'language': 'Chinese'}
+```
+
+### 2.解决中文乱码问题
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+r=requests.get('https://www.4399.com')
+s=BeautifulSoup(r.text,'lxml')
+s.find_all('a')
+print(s)
+# 此时获取的数据有中文乱码
+print(r.encoding)
+# 输出“ISO-8859-1”，说明此时使用这种编码方式解码的。但该网站的编码方式是GB2312。
+# 切换编码方式
+r=requests.get('https://www.4399.com')
+r.encoding='gb2312'
+s=BeautifulSoup(r.text,'lxml')
+s.find_all('a')
+print(s)
+# 此时输出的数据没有中文乱码。
+# 可以通过以下方式猜测编码方式：
+import chardet
+print(chardet.detect(r.content))
+```
+
+爬取新华社新闻排行榜并发送邮件至电子邮箱中
+
+```python
+import smtplib
+import datetime
+import time
+from email.mime.text import MIMEText
+import json
+import requests
+from bs4 import BeautifulSoup as bs
+
+def send_email(message):  # 发送一封邮件
+    msg_from = 'xyz@abc.com'  # 发送方
+    passwd = 'password'  # 发送方授权码或密码
+    msg_to = 'abc@xyz.com'  # 接收方
+    subject = '新华社新闻排行榜'  # 主题
+    msg = MIMEText(message,'plain','utf-8')  # HTML纯文本格式发送邮件
+    msg['Subject'] = subject
+    msg['From'] = msg_from
+    msg['To'] = msg_to
+    s = smtplib.SMTP_SSL("smtp.abc.com", 465)  
+    # 邮件服务器及端口号，一般可以在邮件网站上查到
+    s.login(msg_from, passwd)
+    s.sendmail(msg_from, msg_to, msg.as_string())
+    
+content='' # 设置一个保存数据的字符串
+url="http://www.news.cn/json/bangdan/top1.json" # 目标网站
+headers={'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'}
+r=requests.get(url,headers=headers)
+soup=bs(r.text,"lxml")
+p=soup.find_all("p")
+p=p[0].text[9:] # 去除无用字符
+j=json.loads(p) # 解析json代码
+for i in range(10):
+    content=content+str(i+1)+' - '+j['list'][i]['listTitle']+'\n' 
+    # 取出每一条新闻
+    subpath=j['list'][i]['subpath']
+    # 子网站中含用详细信息
+    s=requests.get(subpath,headers=headers)
+    s=s.text[14:-1] # 去除无用字符
+    js=json.loads(s) # 解析json代码
+    content=content+js['list'][0]["contentAbstract"]+'\n'
+    content=content+js['list'][0]["contentUrl"]+'\n'
+    # 取出摘要和含有详细新闻的网站
+    
+send_email(content) # 发送邮件
+```
+
+
 

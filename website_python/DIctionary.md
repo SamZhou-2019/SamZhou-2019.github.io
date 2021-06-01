@@ -51,7 +51,14 @@ print(staff_1)
 print(staff_2)
 ```
 
-## 5.遍历字典
+## 5.查询字典
+
+```python
+staff_1['present'] # 等价于：
+staff_1.get['present']
+```
+
+## 6.遍历字典
 
 
 ```python
@@ -119,7 +126,9 @@ for name in sorted(staff.keys()):
         print('I see '+name+' having meeting.') 
 ```
 
-## 6.字典嵌套
+### 获取字典的长度：len(dict)
+
+## 7.字典嵌套
 
 
 ```python

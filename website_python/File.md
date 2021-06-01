@@ -14,6 +14,14 @@ with open('pi.txt') as pi:
         print(number)      #逐数输出
 ```
 
+```python
+# 也可以使用如下方法：
+pi=open('pi.txt', 'r').read()
+# 若文件出现乱码或无法读取，可指定编码方式，如：
+# pi=open('pi.txt', 'r', encoding='ANSI').read()
+print(pi)
+```
+
 ### 逐行读取并输出
 
 
