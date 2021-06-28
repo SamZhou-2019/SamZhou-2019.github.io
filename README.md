@@ -4,29 +4,31 @@
 
 > ### 📝学习笔记
 >
-> > [C语言的一些常用函数](website_C/C_functions.md)
+> > [C语言的一些常用函数](C/C_functions.md)
 > >
-> > [Java学习笔记](website_java/java.md)
+> > [Java学习笔记](java/java.md)
 > >
 > > [python学习笔记](website_python/Python.md)
 > >
-> > [C语言的指针（一些小程序）](website_C/C_pointer.md)
+> > [C语言的指针（一些小程序）](C/C_pointer.md)
 > >
-> > [C语言的程序示例](website_C/C_program.md)
+> > [C语言的程序示例](C/C_program.md)
 > >
-> > [Kotlin入门](website_java/Kotlin.md)
+> > [Kotlin入门](java/Kotlin.md)
 > >
 > > [MatLab笔记](website_matlab/matlab.md)
 > >
-> > [数据结构笔记](website_C/DS.md)
+> > [安卓开发笔记](java/Android.md)
+> >
+> > [数据结构笔记](C/DS.md)
 > >
 > > [python爬虫笔记](website_python/PySpider.md)
 
 > ### 📚学习资料
 >
-> > [管理学复习范围](webpage_management/management.htm)
+> > [管理学复习范围](management/management.htm)
 > >
-> > [组织行为学复习范围](webpage_management/Organizational_Behavior.htm)
+> > [组织行为学复习范围](management/Organizational_Behavior.htm)
 > >
 > > [西电暑实网课答案](webpage_shushi_2019/shushi_2019.html)
 > >
@@ -34,7 +36,9 @@
 
 > ### 📌学习心得
 >
-> > [信息计量学-关于usnews\$曲阜师大的思考](website_informetrics/usnews.md)
+> > [信息计量学-关于usnews\$曲阜师大的思考](info_management/usnews.md)
+> >
+> > [信息组织笔记](info_management/info_organize.md)
 > >
 > > [金工日记](website_metalwork/metalwork.html)
 > >
@@ -48,7 +52,7 @@
 > >
 > > [信息安全-记一次系统攻击实验](website_security/attackXP.md)
 > >
-> > [了解一下ADB](website_java/What'sADB.md)
+> > [了解一下ADB](java/What'sADB.md)
 
 > ### 📁其他
 >
@@ -64,7 +68,7 @@
 
 > 留一些要填的坑
 >
-> > [微观经济学笔记（尚未完成）](website_economics/microeco.md)
+> > [微观经济学笔记（尚未完成）](economics/microeco.md)
 > >
 > > [R语言&数据挖掘（尚未完成）](website_R/R.md)
 > >
@@ -89,14 +93,5 @@ document.write(Date());
 >
 > \#经济学\#舍友说他们这学期工程概论是教经济管理的，然而老师连GDP也不会算😂。
 >
-> \#Android开发\# The specified Gradle distribution 'https://services.gradle.org/distributions/gradle-6.5-bin.zip' does not exist.
+> \#Android开发\# 
 >
-> > 在第一次使用Android Studio，创建一个新项目之后，点击右上角的gradle图标，下载完成之后报错：
-> >
-> > ```bash
-> > The specified Gradle distribution 'https://services.gradle.org/distributions/gradle-6.5-bin.zip' does not exist.
-> > ```
-> >
-> > 解决方法：打开这个链接，下载gradle-6.5-bin.zip，然后解压到`C:\Users\【用户名】\.gradle`里面。回到Android Studio，依次选择`File->Settings->Build,Execution,Deployment->Gradle`，在"Use Gradle from:"旁边的下拉框选择”Specified location” and paste the direction ，右边的框中填`C:\Users\【用户名】\.gradle\gradle-6.5-bin`，点击Apply。
-> >
-> > 再点击gradle图标，就不会报这个错了。[参考链接](https://stackoverflow.com/questions/56161984/the-specified-gradle-distribution-https-services-gradle-org-distributions-gra)

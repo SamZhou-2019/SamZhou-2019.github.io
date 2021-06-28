@@ -19,7 +19,7 @@
 > ![img](usnews/S3.PNG)
 >
 > > 注：完整的大作业可以在地址栏输入
-> > https://samzhou-2019.github.io/website_informetrics/usnews/S1.PNG
+> > https://samzhou-2019.github.io/info_management/usnews/S1.PNG
 > > 将S后面的数字改为1至17即可。
 > > GitHub下载图片较慢请见谅，有空我会把这个网站搬到Gitee里面。
 
