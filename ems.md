@@ -623,7 +623,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——柴建](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136707&idx=1&sn=eb4f929111a689356b42fc578f02794c&chksm=b1241d488653945e62b9c05123dfa73e6cea23678cc54ecda9b8d1334b5017296e74d37e6ab8&scene=21#wechat_redirect)
+[师资队伍介绍——柴建](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136707&idx=1&sn=eb4f929111a689356b42fc578f02794c&chksm=b1241d488653945e62b9c05123dfa73e6cea23678cc54ecda9b8d1334b5017296e74d37e6ab8&scene=21#wechat_redirect)
 
 **2.** **刘东苏** 教授 博士生导师 硕士生导师
 
@@ -631,7 +631,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——刘东苏](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136784&idx=1&sn=831d5499a593bf5b494b27b43cd12c4e&chksm=b1241d1b8653940d0be15a74b7a6d4d7d977b6154b3c22d04634c5c9bbb4f923b58b4208e39a&scene=21#wechat_redirect)
+[师资队伍介绍——刘东苏](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136784&idx=1&sn=831d5499a593bf5b494b27b43cd12c4e&chksm=b1241d1b8653940d0be15a74b7a6d4d7d977b6154b3c22d04634c5c9bbb4f923b58b4208e39a&scene=21#wechat_redirect)
 
 **3. 温浩宇** 教授 硕士生导师
 
@@ -639,7 +639,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——温浩宇](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136790&idx=1&sn=8d9a779e85023d56ef4bf3df086f8a17&chksm=b1241d1d8653940b07039149a949dd4d7c9232cb9f63ae0158c74fb59b82add490d64b7be3fd&scene=21#wechat_redirect)
+[师资队伍介绍——温浩宇](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136790&idx=1&sn=8d9a779e85023d56ef4bf3df086f8a17&chksm=b1241d1d8653940b07039149a949dd4d7c9232cb9f63ae0158c74fb59b82add490d64b7be3fd&scene=21#wechat_redirect)
 
 **4. 李琳** 副教授
 
@@ -649,7 +649,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——李琳](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136712&idx=1&sn=cf40b99c9d53c1c472f8e60337f70d44&chksm=b1241d4386539455e03939db0d036094f199a93e2d0c02f9ed017e4acb5f3b9c5243504c15ab&scene=21#wechat_redirect)
+[师资队伍介绍——李琳](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136712&idx=1&sn=cf40b99c9d53c1c472f8e60337f70d44&chksm=b1241d4386539455e03939db0d036094f199a93e2d0c02f9ed017e4acb5f3b9c5243504c15ab&scene=21#wechat_redirect)
 
 **5. 杨朝君** 副教授 博士生导师 硕士生导师  
 
@@ -661,7 +661,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——杨朝君](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136746&idx=1&sn=741d87dbed4171dd82c5449f8f571b6a&chksm=b1241d618653947739fdb9cc5f1618a407f87dffa0f5f741cf7d56a7e92c5331a3a6d400d7ad&scene=21#wechat_redirect)
+[师资队伍介绍——杨朝君](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136746&idx=1&sn=741d87dbed4171dd82c5449f8f571b6a&chksm=b1241d618653947739fdb9cc5f1618a407f87dffa0f5f741cf7d56a7e92c5331a3a6d400d7ad&scene=21#wechat_redirect)
 
 **6. 杜黎** 副教授 硕士生导师
 
@@ -669,7 +669,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——杜黎](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136702&idx=1&sn=0a62988661a0b8ec35a6b0f62c4c2941&chksm=b1241cb5865395a390d79f18d21e52e0e838c8592270745f16ca1a0d52fc2fbabd4ff587f4fc&scene=21#wechat_redirect)
+[师资队伍介绍——杜黎](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136702&idx=1&sn=0a62988661a0b8ec35a6b0f62c4c2941&chksm=b1241cb5865395a390d79f18d21e52e0e838c8592270745f16ca1a0d52fc2fbabd4ff587f4fc&scene=21#wechat_redirect)
 
 **7. 李慧** 副教授 硕士生导师
 
@@ -677,7 +677,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——李慧](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136770&idx=1&sn=691ed5f6f322fd14e88a3a0cae677aa7&chksm=b1241d098653941fe98ea7f2268acfce5648d0e268c4a42a1c4dabd442e3e2d70d4bc114c166&scene=21#wechat_redirect)
+[师资队伍介绍——李慧](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136770&idx=1&sn=691ed5f6f322fd14e88a3a0cae677aa7&chksm=b1241d098653941fe98ea7f2268acfce5648d0e268c4a42a1c4dabd442e3e2d70d4bc114c166&scene=21#wechat_redirect)
 
 **8. 王玙** 副教授 硕士生导师
 
@@ -685,7 +685,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——王玙](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136717&idx=1&sn=a510788c81243f73d126569236a38fd9&chksm=b1241d4686539450849edc2ae16072bcc506a216dc318abab50d5ab58b0e234b4fc5d2407841&scene=21#wechat_redirect)
+[师资队伍介绍——王玙](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136717&idx=1&sn=a510788c81243f73d126569236a38fd9&chksm=b1241d4686539450849edc2ae16072bcc506a216dc318abab50d5ab58b0e234b4fc5d2407841&scene=21#wechat_redirect)
 
 **9. 张宗明** 副教授 硕士生导师
 
@@ -693,7 +693,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——张宗明](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136767&idx=1&sn=270ec0e469c3bbc0d2791f20c0f287cd&chksm=b1241d7486539462676b98e0cb84a169bee4c68a69682b8bc1499fac586f5dcc06ff0f0f2b7b&scene=21#wechat_redirect)
+[师资队伍介绍——张宗明](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136767&idx=1&sn=270ec0e469c3bbc0d2791f20c0f287cd&chksm=b1241d7486539462676b98e0cb84a169bee4c68a69682b8bc1499fac586f5dcc06ff0f0f2b7b&scene=21#wechat_redirect)
 
 **10. 曾凯** 讲师
 
@@ -701,7 +701,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——曾凯
+[师资队伍介绍——曾凯
 
 **11. 徐雅卿** 讲师
 
@@ -709,7 +709,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——徐雅卿](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136735&idx=1&sn=bba59004ac97615909f424429b43b54d&chksm=b1241d5486539442df9c5f0cd30e3ab5af36ccd96967be80905b749971968a7940534397430e&scene=21#wechat_redirect)
+[师资队伍介绍——徐雅卿](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136735&idx=1&sn=bba59004ac97615909f424429b43b54d&chksm=b1241d5486539442df9c5f0cd30e3ab5af36ccd96967be80905b749971968a7940534397430e&scene=21#wechat_redirect)
 
 **12. 黄丽娟** 讲师
 
@@ -717,7 +717,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——黄丽娟](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136814&idx=1&sn=d484ff6d366f028233431e9cfa2e09a9&chksm=b1241d25865394336cec4ea594baae770fd13d748ddfee75e1768344abb39707a4cc7cbc5700&scene=21#wechat_redirect)
+[师资队伍介绍——黄丽娟](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136814&idx=1&sn=d484ff6d366f028233431e9cfa2e09a9&chksm=b1241d25865394336cec4ea594baae770fd13d748ddfee75e1768344abb39707a4cc7cbc5700&scene=21#wechat_redirect)
 
 **13. 刘晨** 讲师
 
@@ -725,7 +725,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——刘晨](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136777&idx=1&sn=bf4e24fc75011235c297e6868a1af297&chksm=b1241d02865394141f7a355e34f45931061034cb184e6a3961b04510323f8b46765d5f3ecad5&scene=21#wechat_redirect)
+[师资队伍介绍——刘晨](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136777&idx=1&sn=bf4e24fc75011235c297e6868a1af297&chksm=b1241d02865394141f7a355e34f45931061034cb184e6a3961b04510323f8b46765d5f3ecad5&scene=21#wechat_redirect)
 
 **14. 扈衷权** 讲师 
 
@@ -735,7 +735,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——扈衷权](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136726&idx=1&sn=02400261d8ab15bed38da525aded798c&chksm=b1241d5d8653944be50f6026166d1e69f33b046a6c9a769f1e3a4ce1766c9fa5d1b8627146ed&scene=21#wechat_redirect)
+[师资队伍介绍——扈衷权](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136726&idx=1&sn=02400261d8ab15bed38da525aded798c&chksm=b1241d5d8653944be50f6026166d1e69f33b046a6c9a769f1e3a4ce1766c9fa5d1b8627146ed&scene=21#wechat_redirect)
 
 **15. 李皓** 讲师
 
@@ -743,7 +743,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——李皓](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136765&idx=1&sn=035d1bd3f7dcf923df04eda263317e0d&chksm=b1241d76865394601578ddbc24f90bf7e913e1192bbf92ba7c0ef993525ce322eb787daae8ef&scene=21#wechat_redirect)
+[师资队伍介绍——李皓](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136765&idx=1&sn=035d1bd3f7dcf923df04eda263317e0d&chksm=b1241d76865394601578ddbc24f90bf7e913e1192bbf92ba7c0ef993525ce322eb787daae8ef&scene=21#wechat_redirect)
 
 **16. 冯平平** 讲师
 
@@ -751,7 +751,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——冯平平](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136749&idx=1&sn=7f8aa7b0da0fb6bd183fadd483456a7c&chksm=b1241d66865394709a6e76c5b5b4f51f7b7e28e5138ae48652dbee9d9d0f72648d73ee783b91&scene=21#wechat_redirect)
+[师资队伍介绍——冯平平](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136749&idx=1&sn=7f8aa7b0da0fb6bd183fadd483456a7c&chksm=b1241d66865394709a6e76c5b5b4f51f7b7e28e5138ae48652dbee9d9d0f72648d73ee783b91&scene=21#wechat_redirect)
 
 **17. 任小静** 讲师
 
@@ -765,7 +765,7 @@ https://faculty.xidian.edu.cn/MXB2/
 
 **更多详细信息，请点击下面链接至个人介绍：**
 
-[EMEC | 师资队伍介绍——王文怡](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136828&idx=1&sn=7dcbeef20cee6742cf40cbf251b67402&chksm=b1241d37865394210c43874bda01626c0e00e9a0403df5c072957985ff6a0101e61b69096dd7&scene=21#wechat_redirect)
+[师资队伍介绍——王文怡](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NjAyMA==&mid=2452136828&idx=1&sn=7dcbeef20cee6742cf40cbf251b67402&chksm=b1241d37865394210c43874bda01626c0e00e9a0403df5c072957985ff6a0101e61b69096dd7&scene=21#wechat_redirect)
 
 ## 专业特色
 
