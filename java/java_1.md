@@ -116,4 +116,10 @@ $ javap Helloworld.class # 反编译，将字节码反编译为源码
 > **(JavaSourceFile)----[javac.exe]---->(JavaBytecode)----[java.exe]---->{execute}**
 > **(源程序)----[编译器]---->(字节码程序)----[解释器]---->{执行}**
 
+## bonus!
+
+通常windows中cmd的编码格式为gbk。所以如果在命令行编译并运行编码格式为utf-8的java文件时会乱码。解决方案：
+1. 将java源文件改为gbk格式，重新编译
+2. 在编译命令后指定编码格式：`javac -encoding 源文件的编码格式 源文件名.java`
+
 [返回上一页](java.md)
