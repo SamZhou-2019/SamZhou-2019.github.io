@@ -72,11 +72,7 @@ abstract,continue,for,new,switch,assert,default,goto,package,synchronized,boolea
 
    ```java
    public class ClassName{
-       /*class的命名规则：
-       1. 同文件名对应
-       2. 首字母大写
-       3. 名词形式
-       */
+       /*根据习惯（驼峰式命名法），类名和接口名的每个单词的首字母都大写，如：ApplePricePerKilo*/
    }
    ```
 
