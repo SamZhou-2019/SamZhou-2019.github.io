@@ -29,8 +29,6 @@
 
 主要课程：数据科学导论、大数据管理技术、Python程序设计、预测与决策、商务智能分析、统计机器学习、商务数据可视化分析、大数据商业模式分析、商业人工智能等。
 
-详情请查看：[大数据管理与应用专业申请表](https://stuxidianeducn-my.sharepoint.com/:b:/g/personal/zxzhou_stu_xidian_edu_cn/EXisyl1QTM9PslAesu2rgeABU7qC_sZxyw3kcWlLgSEuRA?e=icLJ4x)
-
 # 2.经济与金融系
 
 ## 金融学（2020省级一流专业）
