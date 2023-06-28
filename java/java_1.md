@@ -38,13 +38,14 @@ class Student {
 }
 ```
 
+
 ### Java文件剖析
 
 1. 注释
 
    ```java
-   //单行注释
-   /*多行注释
+   //单行注释：只对本行//后的内容起到注释作用
+   /*多行注释：注释范围为两个星号内的内容，可以是多行内容
    和C语言类似
    */
    ```
@@ -52,7 +53,8 @@ class Student {
 2. 保留字
 
    ```java
-   abstract,continue,for,new,switch,assert,default,goto,package,synchronized,boolean,do,if,private,this,break,double,implements,protected,throw,byte,else,import,public,throws,case,enum,instanceof,return,transient,catch,extends,int,short,try,char,final,interface,static,void,class,finally,long,strictfp,volatile,const,float,native,super,while
+   // 全部为小写，在编译器中会变色
+abstract,continue,for,new,switch,assert,default,goto,package,synchronized,boolean,do,if,private,this,break,double,implements,protected,throw,byte,else,import,public,throws,case,enum,instanceof,return,transient,catch,extends,int,short,try,char,final,interface,static,void,class,finally,long,strictfp,volatile,const,float,native,super,while
    // ⚠对编译器具有特殊意义，在程序中不能用作其他目的
    ```
 
@@ -118,8 +120,29 @@ $ javap Helloworld.class # 反编译，将字节码反编译为源码
 
 ## bonus!
 
+### 中文编码格式问题
+
 通常windows中cmd的编码格式为gbk。所以如果在命令行编译并运行编码格式为utf-8的java文件时会乱码。解决方案：
 1. 将java源文件改为gbk格式，重新编译
 2. 在编译命令后指定编码格式：`javac -encoding 源文件的编码格式 源文件名.java`
+
+### 有关类的声明
+
+Java中的类通过class声明。
+
+⚠注意：一个java文件内，可以声明多个类，编译完成后，生成的class文件的数量等于声明的类数量【可以使用java命令分别单独运行每个类】。但是
+1. 不同的类，类名不能相同
+2. 一个java文件内只允许有一个使用public修饰的类
+3. 被public修饰的类的类名必须和文件名保持一致
+
+### 文档注释
+
+   ```java
+   /** 和普通注释不同，文档注释的前半部分有两个星号 */
+   ```
+
+用于产生帮助文档，对整个类、整个方法进行解释。
+
+生成帮助文档：`javadoc -d 目标目录 【-author -version】 源文件名.java`（中括号【】里面的部分可以省略）。然后用浏览器打开目标目录下的index.html，即可显示帮助文档。
 
 [返回上一页](java.md)
