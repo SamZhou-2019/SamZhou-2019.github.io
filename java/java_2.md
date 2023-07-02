@@ -48,8 +48,6 @@ Java没有无符号的数据类型，所以没有unsigned关键词。
 boolean b = true;// true false
 // !b = false
 
-// 空值 null
-
 // 整数变量 int byte short long
 // int是程序默认的整型数据类型
 byte a = 123;
@@ -65,25 +63,42 @@ char c = 'a', d = '我';// 0~65536 Unicode
 // 转义：\n(换行) \b(退格) \t(制表) \r(回车) \' \" \\ \u0001(Unicode)
 System.out.println(c + d);// 输出的是Unicode数值
 System.out.println((int) c);
+// 若赋值为整数，如char a = 65;不会报错，但会根据unicode自动转化为char，即实际的a为'A'（可以赋值0~65536范围内的int值）
 
 // 浮点数变量 float double
 float f = 3.14159f, e = 1e-5F;// ⚠️注意：**浮点数默认为double。若定义float，结尾需加大写或小写字母F或f。**
 // 如：float a = 1.5;会报错，应改为float a = 1.5f;
+// 若赋值为整数，如float a = 10;不会报错，但会自动转化为float，即实际的a为10.0f
 // 保留八位有效数字
 double g = 3.1415926535897d, h = 1e-90;// 结尾加大写小写字母D或d，可省略
+// 同样的，若赋值为整数，如double a = 10;不会报错，但也会自动转化
 // 可用科学计数法表示浮点数，用e或者E表示指数
 // 保留十六位有效数字
-// 精度从低到高：byte short char int long float double
-// 从低到高转换无需显式强制转换，从高到低必须使用强制转换
+// 精度从低到高：byte short/char int long float double
+// 从低到高转换无需显式强制转换，从高到低必须使用强制转换（否则会报错）
 double a = 1;
 int i = (int)3.5;
+```
 
+
+
+```java
 // 数制转换
 System.out.println(Integer.toHexString(2020));// 将数字转换成十六进制字符串
 System.out.println(Integer.toBinaryString(2020));// 将数字转换成二进制字符串
 System.out.println(Integer.toOctalString(2020));// 将数字转换成八进制字符串
 System.out.println(Integer.toString(2020));// 将数字转换成十进制字符串
 ```
+
+除了八种基本数据类型以外的数据类型统称引用数据类型，如字符串String。
+
+```Java
+String s1 = "tom";
+String s_null = null; // 空值:null null可以赋值给引用数据类型
+String s_2 = ""; // 空串 
+```
+
+
 
 ## 常量
 
