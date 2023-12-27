@@ -90,7 +90,7 @@ System.out.println(Integer.toOctalString(2020));// 将数字转换成八进制�
 System.out.println(Integer.toString(2020));// 将数字转换成十进制字符串
 ```
 
-除了八种基本数据类型以外的数据类型统称引用数据类型，如字符串String。
+除了八种基本数据类型以外的数据类型统称**引用数据类型**，如字符串String。
 
 ```Java
 String s1 = "tom";
